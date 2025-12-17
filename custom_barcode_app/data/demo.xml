@@ -4,7 +4,11 @@
         <record id="product_demo_obtvali" model="product.product">
             <field name="name">Producto Validar</field>
             <field name="barcode">OBTVALI</field>
-            <field name="type">product</field>
+            <field name="list_price">0.0</field>
+            <field name="standard_price">0.0</field>
+            <field name="categ_id" ref="product.product_category_all"/>
+            <field name="invoice_policy">order</field>
+            <field name="type">consu</field>
         </record>
     </data>
 </odoo>
