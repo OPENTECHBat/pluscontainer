@@ -1083,8 +1083,36 @@ export class ScanningDisplay extends Component {
     }
 
     scan = async (barcode) => {
+
         let data = await this.getScanData(barcode)
         let scanned_part = data.product_data
+        if (scanned_part?.[0]?.barcode === "OBTVALI") {
+
+            if (!this.state.selected_operation_type || this.state.selected_operation_type.length !== 1) {
+                this.notificationService.add("Seleccioná/escaneá el tipo de operación antes de validar.", {
+                    title: "Falta información",
+                    type: "warning",
+                });
+                this.onPlaySound("error");
+                return;
+            }
+
+            const hasLines =
+                (this.display_parts_list?.some(p => (p || []).length > 0)) ||
+                (this.state.display_parts?.some(p => (p || []).length > 0));
+
+            if (!hasLines) {
+                this.notificationService.add("No hay líneas cargadas para validar.", {
+                    title: "Nada para validar",
+                    type: "warning",
+                });
+                this.onPlaySound("error");
+                return;
+            }
+
+            this.applyValidateTransfer();
+            return;
+        }
         let scanned_location = data.location_data
         let scanned_operation_type = data.operation_type_data
 
