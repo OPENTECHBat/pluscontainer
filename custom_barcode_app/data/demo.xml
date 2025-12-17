@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="product_demo_obtvali" model="product.product">
+            <field name="name">Producto Validar</field>
+            <field name="barcode">OBTVALI</field>
+            <field name="type">product</field>
+        </record>
+    </data>
+</odoo>
