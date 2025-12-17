@@ -1,0 +1,21 @@
+{
+    'name': 'Stock Quantity Alert',
+    'version': '18.0.1.0',
+    'summary': 'Product Management with Low Stock Alerts and Supplier Info',
+    'description': 'Manage products with variants, barcode, stock tracking, and auto email alerts.',
+    'category': 'Inventory',
+    'author': 'Muhammad Umar',
+    'license': 'LGPL-3',
+    'depends': ['product', 'stock', 'purchase', 'mail'],
+    'data': [
+        'security/ir.model.access.csv',
+        'data/mail_template.xml',
+        'data/stock_alert_cron.xml',
+        'views/product_template_views.xml',
+        'views/stock_alert_views.xml',
+        'views/res_config_settings.xml',
+    ],
+    "images": ['static/description/banner.png'],
+    'installable': True,
+    'application': True,
+}

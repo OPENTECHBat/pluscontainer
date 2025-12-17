@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="ir_cron_check_low_stock" model="ir.cron">
+        <field name="name">Check Low Stock Products</field>
+        <field name="model_id" ref="model_stock_alert"/>
+        <field name="state">code</field>
+        <field name="code">model.check_low_stock_products()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="active">True</field>
+    </record>
+</odoo>

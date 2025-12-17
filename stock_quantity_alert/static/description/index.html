@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Low Stock Alerts</title>
+</head>
+<body>
+    <section class="oe_container">
+        <div class="oe_row oe_spaced">
+            <h3>Automatically alerts when products are low in stock</h3>
+            <p class="oe_slogan" style="font-size: 18px; color: #555;">
+                This alert notifies you when product stock levels fall below the minimum threshold defined for each product. It helps ensure timely reordering and avoids stockouts, keeping your inventory under control
+            </p>
+            <h3>Process Overview:</h3>
+            <p class="oe_slogan" style="font-size: 18px; color: #555;">
+                <h6>1. Minimum Quantity Setup:</h6>
+                Each product has a Minimum Quantity (Min Qty) field. This value defines the lowest acceptable stock level for that product
+
+                <h6>2. Settings Configuration:</h6>
+                    In the Settings, there is an option to enable the Minimum Quantity feature. Once activated, the Min Qty field becomes visible on the product form view, allowing users to set threshold levels for each product.
+
+                <h6>3. Scheduled Action (Automation):</h6>
+                A Scheduled Action (Cron Job) runs automatically at defined intervals (e.g., daily).
+                It checks all products and identifies those with quantities below the minimum.
+
+                <h6>4. Alert Record Creation:</h6>
+                For each low stock product, an entry is created in a custom Low Stock Alert model.
+                These records are stored and displayed in a Tree View under the “Low Stock Alerts” menu.
+
+                <h6>5. Email Notification:</h6>
+                If one or more products are low in stock, an automated email is sent to the responsible user.
+                The email includes a detailed list of all low stock products in a table format.
+
+                <h6>6. User-Friendly Menu:</h6>
+                A dedicated Low Stock Alerts menu is added to the Inventory or Custom App.
+                Users can easily view all current low-stock products and take action accordingly.
+
+                <h6>7. Efficient Inventory Control:</h6>
+                This module helps avoid stockouts, improves inventory visibility, and ensures timely replenishment of products.
+            </p>
+            <h1 class="oe_slogan" style="color:#00AEEF; font-size: 30px; font-weight: bold;">
+                Low Stock Alerts Integration
+            </h1>
+            <h3>Step 1</h3>
+            <p class="oe_slogan" style="font-size: 18px; color: #555;">
+                When you enable the 'Min Qty' field in the settings, the 'Minimum Stock Qty' field will become visible in the product form view.
+            </p>
+            <img src="setting.png" alt="Low Stock Alerts" style="max-width: 100%; height: auto; margin-top: 20px;" />
+        </div>
+    </section>
+    <section class="oe_container">
+        <div class="oe_row oe_spaced">
+            <h3>Step 2</h3>
+            <p class="oe_slogan" style="font-size: 18px; color: #555;">
+                First, you need to fill in the Minimum Stock Quantity field in the product form.
+            </p>
+            <img src="product_form.png" alt="Low Stock Alerts" style="max-width: 100%; height: auto; margin-top: 20px;" />
+        </div>
+    </section>
+    <section class="oe_container">
+        <div class="oe_row oe_spaced">
+            <h3>Step 3</h3>
+            <p class="oe_slogan" style="font-size: 18px; color: #555;">
+                When the Minimum Stock Quantity is greater than the Available Quantity, the scheduled action will run on a daily basis.
+            </p>
+            <img src="schedule_form.png" alt="Low Stock Alerts" style="max-width: 100%; height: auto; margin-top: 20px;" />
+        </div>
+    </section>
+    <section class="oe_container">
+        <div class="oe_row oe_spaced">
+            <h3>Step 4</h3>
+            <p class="oe_slogan" style="font-size: 18px; color: #555;">
+                After the scheduled action runs, an email is sent containing a list of products that are low in stock.
+                Additionally, a new menu named Low Stock Alerts appears under the Stock section in the Reporting menu.
+                This menu opens a tree view that displays all the low stock products listed in the email.
+                Clicking on any product in the tree view will open its corresponding product form view.
+            </p>
+            <img src="email_tree_view.png" alt="Low Stock Alerts" style="max-width: 100%; height: auto; margin-top: 20px;" />
+            <img src="email.png" alt="Low Stock Alerts" style="max-width: 100%; height: auto; margin-top: 20px;" />
+            <img src="low_stock_menu.png" alt="Low Stock Alerts" style="max-width: 100%; height: auto; margin-top: 20px;" />
+            <img src="product_form_view.png" alt="Low Stock Alerts" style="max-width: 100%; height: auto; margin-top: 20px;" />
+        </div>
+    </section>
+    <section class="oe_container">
+        <div class="oe_row oe_spaced">
+            <h2>Developed by:</h2>
+            <p style="font-size: 18px; color: #555;">
+                Muhammad Umar
+                <br/>
+                Odoo Developer
+                <br/>
+                Email: <a href="https://umar200ak@gmail.com" target="_blank">umar200ak@gmail.com</a> /
+                <a href="https://github.com/umarakhterak" target="_blank">Github</a>
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>

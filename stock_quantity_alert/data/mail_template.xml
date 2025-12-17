@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="mail_template_low_stock" model="mail.template">
+        <field name="name">Low Stock Alert</field>
+        <field name="model_id" ref="product.model_product_template"/>
+        <field name="subject">Low Stock Warning</field>
+        <field name="email_from">{ user.email }</field>
+        <field name="email_to">{ user.email }</field>
+        <field name="body_html" type="html">
+            <p>Hello,</p>
+            <p>The following products are low in stock:</p>
+            <table style="width: 30%; border-collapse: collapse; border: 1px solid #333; border-radius: 8px; overflow: hidden; font-family: Arial, sans-serif; font-size: 14px;" class="table table-borderless">
+                <thead>
+                    <tr style="background-color: #f2f2f2;">
+                        <th style="border: 1px solid #ddd; padding: 5px; text-align: left; text-bold">Product</th>
+                        <th style="border: 1px solid #ddd; padding: 5px; text-align: left; text-bold">Available Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <t t-foreach="ctx.get('low_stock_products', [])" t-as="product">
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 5px;">
+                                <span t-esc="product['name']"/>
+                            </td>
+                            <td style="border: 1px solid #ddd; padding: 5px;">
+                                <span t-esc="product['qty_available']"/>
+                            </td>
+                        </tr>
+                    </t>
+                </tbody>
+            </table>
+            <p>Regards,<br/>Inventory System
+            </p>
+        </field>
+    </record>
+</odoo>
