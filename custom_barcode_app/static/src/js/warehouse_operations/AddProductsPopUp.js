@@ -2,7 +2,7 @@
 
 
 const {Component, useState, useExternalListener, useEffect, onWillUpdateProps,useRef} = owl;
-import {useService} from "@web/core/utils/hooks";
+import { useService } from "@web/core/utils/hooks";
 
 export class SearchBar extends Component {
     setup() {
@@ -39,7 +39,7 @@ export class SearchBar extends Component {
         }, 300);
     }
     sendRequest = async (value) => {
-        let parts = await this.orm.searchRead("product.product", ["|", "|", ["name", "ilike", value], ["default_code", "ilike", value], ["barcode", "ilike", value]], ["id", "type", "display_name", "name", "default_code", "categ_id", "weight", "list_price", "write_date", "uom_id", "tracking"], {limit: 30})
+        let parts = await this.orm.searchRead("product.product", ["|", "|", ["name", "ilike", value], ["default_code", "ilike", value], ["barcode", "ilike", value]], ["id", "type", "display_name", "name", "default_code", "categ_id", "weight", "list_price", "write_date", "uom_id", "tracking", "barcode"], {limit: 30})
         this.state.parts = parts
     }
 
@@ -99,7 +99,7 @@ export class SearchBar1 extends Component {
         }, 300);
     }
     sendRequest = async (value) => {
-        let parts = await this.orm.searchRead("product.product", ["|", "|", ["name", "ilike", value], ["default_code", "ilike", value], ["barcode", "ilike", value]], ["id", "type", "display_name", "name", "default_code", "categ_id", "weight", "list_price", "write_date", "uom_id", "tracking"], {limit: 30})
+        let parts = await this.orm.searchRead("product.product", ["|", "|", ["name", "ilike", value], ["default_code", "ilike", value], ["barcode", "ilike", value]], ["id", "type", "display_name", "name", "default_code", "categ_id", "weight", "list_price", "write_date", "uom_id", "tracking", "barcode"], {limit: 30})
         this.state.parts = parts
     }
 

@@ -1,13 +1,18 @@
 /** @odoo-module **/
 
-import { Component, onWillStart, useEffect, useRef, useState } from "@odoo/owl";
-import { Mutex } from "@web/core/utils/concurrency";
-import { useBus, useService } from "@web/core/utils/hooks";
+import {useService,useBus} from "@web/core/utils/hooks";
+import {Component, onWillStart, useState, useRef, onWillUnmount, useEffect} from "@odoo/owl";
+import {Mutex} from "@web/core/utils/concurrency";
 //import core from 'web.core';
-import { SelectAddDropDownLocation, SelectDropDown } from "@custom_barcode_app/js/basic_components/SelectDropDown";
-import { SelectDropDownLocation, SelectDropDownLocationDest, SelectDropDownLocationSrc } from "@custom_barcode_app/js/basic_components/SelectDropDownLocation";
-import { EditPopUpComponent1 } from "@custom_barcode_app/js/inventory_transfer_components/EditPopUpComponent";
-import { AddProductsPopUp } from "@custom_barcode_app/js/warehouse_operations/AddProductsPopUp";
+import {SelectDropDown} from "@custom_barcode_app/js/basic_components/SelectDropDown";
+import {SelectDropDownLocation} from "@custom_barcode_app/js/basic_components/SelectDropDownLocation";
+import {EditPopUpComponent1} from "@custom_barcode_app/js/inventory_transfer_components/EditPopUpComponent";
+import {AddProductsPopUp} from "@custom_barcode_app/js/warehouse_operations/AddProductsPopUp";
+import {
+    SelectDropDownLocationSrc,
+    SelectDropDownLocationDest
+} from "@custom_barcode_app/js/basic_components/SelectDropDownLocation";
+import {SelectAddDropDownLocation} from "@custom_barcode_app/js/basic_components/SelectDropDown"
 import { registry } from "@web/core/registry";
 const actionRegistry = registry.category("actions");
 
@@ -1355,10 +1360,7 @@ export class WarehouseOperation extends Component {
 
         this.state.display_parts[current_page - 1] = display_parts_array
         // this.state.display_parts[current_page - 1] = display_parts_list_copy
-        if (scanned_part[0].barcode === "OBTVALI") {
-            this.validateTransfer();
-            this.applyValidateTransfer();
-        }
+
     }
 
     addToDisplayPartsAddProduct = (scanned_part, quantity) => {

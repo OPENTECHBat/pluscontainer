@@ -10,10 +10,9 @@
     'images' : ["static/description/banner.gif"],
     "depends": ["web","sale", "sale_management","purchase","stock","barcodes"],
     "data":[
-                'data/demo.xml',
                 "views/views.xml",
                 'security/ir.model.access.csv',
-            ],
+             ],
     'assets': {
 
         "web.assets_backend": [
@@ -50,6 +49,7 @@
             "/custom_barcode_app/static/src/js/warehouse_operations/AddProductsPopUp.js",
         ],
     },
+    'demo': [],
     'qweb': [],
     'installable': True,
     'application': True,

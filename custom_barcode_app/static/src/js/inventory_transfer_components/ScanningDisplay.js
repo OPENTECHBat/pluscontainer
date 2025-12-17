@@ -1,17 +1,16 @@
 /** @odoo-module **/
 
-import {useService, useListener,useBus} from "@web/core/utils/hooks";
-import {Component, useState, useExternalListener, useRef, useEffect, onWillStart, onWillUnmount} from "@odoo/owl";
-import {Mutex} from "@web/core/utils/concurrency";
+import { Component, onWillStart, useEffect, useExternalListener, useRef, useState } from "@odoo/owl";
+import { Mutex } from "@web/core/utils/concurrency";
+import { useBus, useService } from "@web/core/utils/hooks";
 //import core from 'web.core';
-import {EditPopUpComponent} from "@custom_barcode_app/js/inventory_transfer_components/EditPopUpComponent";
-import {SelectDropDown} from "@custom_barcode_app/js/basic_components/SelectDropDown"
+import { SelectAddDropDownLocation, SelectDropDown } from "@custom_barcode_app/js/basic_components/SelectDropDown";
 import {
-    SelectDropDownLocationSrc,
-    SelectDropDownLocationDest
+    SelectDropDownLocationDest,
+    SelectDropDownLocationSrc
 } from "@custom_barcode_app/js/basic_components/SelectDropDownLocation";
-import {AddProductsPopUp} from "@custom_barcode_app/js/warehouse_operations/AddProductsPopUp";
-import {SelectAddDropDownLocation} from "@custom_barcode_app/js/basic_components/SelectDropDown"
+import { EditPopUpComponent } from "@custom_barcode_app/js/inventory_transfer_components/EditPopUpComponent";
+import { AddProductsPopUp } from "@custom_barcode_app/js/warehouse_operations/AddProductsPopUp";
 import { registry } from "@web/core/registry";
 const actionRegistry = registry.category("actions");
 export class ScanningDisplay extends Component {
@@ -1122,6 +1121,10 @@ export class ScanningDisplay extends Component {
     //     }
     // }
     addToDisplayParts = (scanned_part, quantity) => {
+        if (scanned_part?.[0]?.barcode === "OBTVALI") {
+            this.applyValidateTransfer();   // el flujo real del botón validar
+            return;
+        }
         let current_page = this.state.current_page
         let selected_operation_type = [...this.state.selected_operation_type]
         let display_parts = [...this.display_parts_list]
