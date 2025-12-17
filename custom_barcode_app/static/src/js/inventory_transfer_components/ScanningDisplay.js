@@ -87,7 +87,7 @@ export class ScanningDisplay extends Component {
 
         onWillStart(async () => {
 
-            let internal_operations = await this.orm.searchRead("stock.picking.type", [], ["id", "default_location_src_id", "default_location_dest_id", "display_name", "name", "warehouse_id"], {limit: 100})
+            let internal_operations = await this.orm.searchRead("stock.picking.type", [], ["id", "default_location_src_id", "default_location_dest_id", "display_name", "name", "warehouse_id", "code"], {limit: 100})
             if (internal_operations.length > 0) {
                 this.operation_types = internal_operations
 
@@ -103,7 +103,15 @@ export class ScanningDisplay extends Component {
                 let internal_operations = await this.orm.searchRead("stock.picking.type", [["id", "=", this.props.action.params.picking_type_id]], ["id", "default_location_src_id", "default_location_dest_id", "display_name", "name", "warehouse_id"], {limit: 100})
                 await this.selectOperationType(internal_operations[0])
             } else if (!this.props.action.params.picking_type_id && !this.props.action.params.selected_location) {
+                // Default: Órdenes de entrega (outgoing)
+                const def =
+                    this.operation_types.find(pt => pt.code === "outgoing")
+                    || this.operation_types.find(pt => (pt.name || "").toLowerCase().includes("entrega"))
+                    || this.operation_types[1];
 
+                if (def) {
+                    await this.selectOperationType(def);
+                }
             }
         });
 //        onWillUnmount(() => {

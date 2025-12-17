@@ -23,10 +23,6 @@ class MainScreen extends Component {
         const barcode_scanned = useService("barcode");
         useBus(barcode_scanned.bus, "barcode_scanned", (ev) => this.scan1(ev.detail.barcode));
 
-        //Al final del setup, si no hay params, ir a Ajustes de Inventario
-        if (!this.props.action.params || Object.keys(this.props.action.params).length === 0) {
-            this.startCreateTransfer();
-        }
     }
 
 
