@@ -1122,7 +1122,30 @@ export class ScanningDisplay extends Component {
     // }
     addToDisplayParts = (scanned_part, quantity) => {
         if (scanned_part?.[0]?.barcode === "OBTVALI") {
-            this.applyValidateTransfer();   // el flujo real del botón validar
+
+            if (!this.state.selected_operation_type || this.state.selected_operation_type.length !== 1) {
+                this.notificationService.add("Seleccioná/escaneá el tipo de operación antes de validar.", {
+                    title: "Falta información",
+                    type: "warning",
+                });
+                this.onPlaySound("error");
+                return;
+            }
+
+            const hasLines =
+                (this.display_parts_list?.some(p => (p || []).length > 0)) ||
+                (this.state.display_parts?.some(p => (p || []).length > 0));
+
+            if (!hasLines) {
+                this.notificationService.add("No hay líneas cargadas para validar.", {
+                    title: "Nada para validar",
+                    type: "warning",
+                });
+                this.onPlaySound("error");
+                return;
+            }
+
+            this.applyValidateTransfer();
             return;
         }
         let current_page = this.state.current_page
