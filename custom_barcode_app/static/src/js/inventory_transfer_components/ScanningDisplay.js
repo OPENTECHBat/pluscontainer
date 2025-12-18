@@ -1083,11 +1083,7 @@ export class ScanningDisplay extends Component {
     }
 
     scan = async (barcode) => {
-
-        let data = await this.getScanData(barcode)
-        let scanned_part = data.product_data
-        if (scanned_part?.[0]?.barcode === "OBTVALI") {
-
+        if (barcode === "OBTVALI") {
             if (!this.state.selected_operation_type || this.state.selected_operation_type.length !== 1) {
                 this.notificationService.add("Seleccioná/escaneá el tipo de operación antes de validar.", {
                     title: "Falta información",
@@ -1113,6 +1109,8 @@ export class ScanningDisplay extends Component {
             this.applyValidateTransfer();
             return;
         }
+        let data = await this.getScanData(barcode)
+        let scanned_part = data.product_data
         let scanned_location = data.location_data
         let scanned_operation_type = data.operation_type_data
 
