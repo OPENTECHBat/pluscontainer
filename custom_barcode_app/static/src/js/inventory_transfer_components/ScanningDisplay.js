@@ -1577,7 +1577,13 @@ export class ScanningDisplay extends Component {
         let record_id = await this.validateTransferPrepareLines()
         await this.orm.call("stock.picking", "button_validate", [record_id], {})
         this.state.validate_popup = false
-        this.backButtonClick()
+        await this.actionService.doAction({
+            name: "Create Transfer",
+            type: "ir.actions.client",
+            target: "fullscreen",
+            tag: "create_transfer",
+            params: {},
+        });
     }
 
 
