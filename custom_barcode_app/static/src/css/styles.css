@@ -42,12 +42,12 @@
 }
 .line-button:hover,
 .line-button:focus {
-  background-color: #06516E;
+  background-color: #DEE2E6;
 }
 
 .confirm-button{
   font-family: 'Argentum Sans';
- background-color: #06516E;
+ background-color: #DEE2E6;
   border-radius: 0px;
   border-style: none;
   box-sizing: border-box;
@@ -146,7 +146,7 @@
 /*}*/
 /*.dropdown-location-list li:hover {*/
 /*color: #FFFFFF;*/
-/*    background-color:#06516E ;*/
+/*    background-color:#DEE2E6 ;*/
 /*}*/
 
 /*.list-operation:hover,*/
