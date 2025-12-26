@@ -12,10 +12,10 @@
                         <i class="fa fa-barcode" style="text-align:center; font-size:120px;"/>
                     </div>
                     <ul class="text-left mb-sm-5 pl-4" style="display: inline-block;font-size:1.2rem;">
-                        <li>Scan an <b>operation type</b> to create a new transfer.</li>
-                        <li>Scan a <b>location</b> to create a new transfer from this location.</li>
-                        <li>Scan a <b>document</b> to open it.</li>
-                        <li>Scan a <b>product</b> to show its location and quantity.</li>
+                        <li>Escanee un <b>tipo de operación</b> para crear una nueva transferencia.</li>
+                        <li>Escanee una <b>ubicación</b> para crear una nueva transferencia desde esta ubicación.</li>
+                        <li>Escanee un <b>documento</b> para abrirlo.</li>
+                        <li>Escanee un <b>producto</b> para ver su ubicación y cantidad.</li>
                     </ul>
                     <div style="display: flex; flex-wrap: wrap;justify-content: center;gap: 10px 10px; margin-top:20px;margin-bottom:20px;">
                         <button t-on-click="startCreateTransfer" class="button-1" style="display: flex; flex-wrap: wrap;justify-content: center;align-items:center;">
