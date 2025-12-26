@@ -3,7 +3,7 @@
 <templates xml:space="preserve">
     <t t-name="custom_barcode_app.MainScreen" owl="1">
         <div style="height:100%;">
-            <div style="display: flex; justify-content: center; align-items: center;height:100%; background-color:#06516E; font-family:Argentum Sans;">
+            <div style="display: flex; justify-content: center; align-items: center;height:100%; background-color:#F3F4F6; font-family:Argentum Sans;">
 
                 <div class="main-screen-container">
 
