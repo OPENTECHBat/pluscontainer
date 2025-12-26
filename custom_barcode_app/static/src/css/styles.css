@@ -1,7 +1,6 @@
-
 /* CSS */
 
-.select-tag{
+.select-tag {
   padding: 8px 12px;
   color: #333333;
   background-color: #EEEEEE;
@@ -14,9 +13,9 @@
 
 }
 
-.line-button{
+.line-button {
   font-family: 'Argentum Sans';
- background-color: #089BAB;
+  background-color: #535454;
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
@@ -40,14 +39,15 @@
   -webkit-user-select: none;
   touch-action: manipulation;
 }
+
 .line-button:hover,
 .line-button:focus {
   background-color: #DEE2E6;
 }
 
-.confirm-button{
+.confirm-button {
   font-family: 'Argentum Sans';
- background-color: #DEE2E6;
+  background-color: #DEE2E6;
   border-radius: 0px;
   border-style: none;
   box-sizing: border-box;
@@ -72,6 +72,7 @@
   -webkit-user-select: none;
   touch-action: manipulation;
 }
+
 .confirm-button:hover,
 .confirm-button:focus {
   background-color: #2E3944;
@@ -153,4 +154,3 @@
 /*.list-operation:focus {*/
 /*  background-color: #4EC1E0;*/
 /*}*/
-
