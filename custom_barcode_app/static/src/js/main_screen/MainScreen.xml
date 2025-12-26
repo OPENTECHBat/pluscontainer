@@ -7,15 +7,15 @@
 
                 <div class="main-screen-container">
 
-                    <h1 style="margin-bottom:20px;font-weight: 600;font-size: 2.5rem;font-family:'Montserrat';">Barcode Scanning</h1>
+                    <h1 style="margin-bottom:20px;font-weight: 600;font-size: 2.5rem;font-family:'Montserrat';">Códigos de barras</h1>
                     <div>
                         <i class="fa fa-barcode" style="text-align:center; font-size:120px;"/>
                     </div>
                     <ul class="text-left mb-sm-5 pl-4" style="display: inline-block;font-size:1.2rem;">
-                        <li>Scan an <b>operation type</b> to create a new transfer.</li>
-                        <li>Scan a <b>location</b> to create a new transfer from this location.</li>
-                        <li>Scan a <b>document</b> to open it.</li>
-                        <li>Scan a <b>product</b> to show its location and quantity.</li>
+                        <li>Escanea un <b>tipo de operación</b> para crear una nueva transferencia.</li>
+                        <li>Escanea una <b>ubicación</b> para crear una nueva transferencia desde esta ubicación.</li>
+                        <li>Escanea un <b>documento</b> para abrirlo.</li>
+                        <li>Escanea un <b>producto</b> para mostrar su ubicación y cantidad.</li>
                     </ul>
                     <div style="display: flex; flex-wrap: wrap;justify-content: center;gap: 10px 10px; margin-top:20px;margin-bottom:20px;">
                         <button t-on-click="startCreateTransfer" class="button-1" style="display: flex; flex-wrap: wrap;justify-content: center;align-items:center;">
@@ -59,7 +59,7 @@
                                         </g>
                                     </svg>
                                 </div>
-                                <div class="main-screen-title">Inventory<br></br> Transfer</div>
+                                <div class="main-screen-title">Transferencia de<br></br> Inventario</div>
                             </div>
                         </button>
 
@@ -86,7 +86,7 @@
                                         </g>
                                     </svg>
                                 </div>
-                                <div class="main-screen-title">Warehouse Operations</div>
+                                <div class="main-screen-title">Operaciones de Almacén</div>
                             </div>
                         </button>
 
@@ -111,7 +111,7 @@
                                         </g>
                                     </svg>
                                 </div>
-                                <div class="main-screen-title">Product Information</div>
+                                <div class="main-screen-title">Información del Producto</div>
                             </div>
                         </button>
 
@@ -155,8 +155,7 @@
                                         </g>
                                     </svg>
                                 </div>
-                                <div class="main-screen-title">Inventory Adjustment</div>
-                            </div>
+                                <div class="main-screen-title">Ajuste de Inventario</div>
                         </button>
 
                     </div>
