@@ -7,10 +7,10 @@
 
                 <div class="main-screen-container">
 
-                    <h1 style="margin-bottom:20px;font-weight: 600;font-size: 2.5rem;font-family:'Montserrat';"> Lector de códigos de barras</h1>
+                    <h1 style="margin-bottom:20px;font-weight: 600;font-size: 2.5rem;font-family:-apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Ubuntu, "Noto Sans", Arial, sans-serif"> Lector de códigos de barras</h1>
                     <div>
                     </div>
-                    <ul class="text-left mb-sm-5 pl-4" style="display: inline-block;font-size:0.8rem;">
+                    <ul class="text-left mb-sm-5 pl-4" style="display: inline-block;font-size:0.8rem; text-align:left">
                         <li>Escanee un <b>tipo de operación</b> para crear una nueva transferencia.</li>
                         <li>Escanee una <b>ubicación</b> para crear una nueva transferencia desde esta ubicación.</li>
                         <li>Escanee un <b>documento</b> para abrirlo.</li>
