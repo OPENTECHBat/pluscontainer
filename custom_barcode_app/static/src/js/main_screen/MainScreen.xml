@@ -3,11 +3,11 @@
 <templates xml:space="preserve">
     <t t-name="custom_barcode_app.MainScreen" owl="1">
         <div style="height:100%;">
-            <div style="display: flex; justify-content: center; align-items: center;height:100%; background-color:#F3F4F6; font-family:Argentum Sans;">
+            <div style="display: flex; justify-content: center; align-items: center;height:100%; background-color:#F3F4F6;">
 
                 <div class="main-screen-container">
 
-                    <h1 style="margin-bottom:20px;font-weight: 600;font-size: 2.5rem;font-family:-apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Ubuntu, "Noto Sans", Arial, sans-serif"> Lector de códigos de barras</h1>
+                    <h1 style="margin-bottom:20px;font-weight: 600;font-size: 2.5rem;"> Lector de códigos de barras</h1>
                     <div>
                     </div>
                     <ul class="text-left mb-sm-5 pl-4" style="display: inline-block;font-size:0.8rem; text-align:left">
