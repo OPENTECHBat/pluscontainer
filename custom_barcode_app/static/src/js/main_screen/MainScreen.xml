@@ -16,7 +16,7 @@
                         <li>Escanee un <b>documento</b> para abrirlo.</li>
                         <li>Escanee un <b>producto</b> para ver su ubicación y cantidad.</li>
                     </ul>
-                    <div style="justify-content: center;gap: 10px 10px; margin-top:20px;margin-bottom:20px;">
+                    <div style="display: flex; flex-wrap: wrap;justify-content: center;gap: 10px 10px; margin-top:20px;margin-bottom:20px;">
                         <button t-on-click="startCreateTransfer" class="button-1" style="display: flex; flex-wrap: wrap;justify-content: center;align-items:center;">
                             <div>
                                 <div>
@@ -74,6 +74,5 @@
      </t>
 
  </templates>
-
 
 
