@@ -76,7 +76,7 @@
 
 
                     <t t-elif="state.scanning_display" >
-                        <div style="display:flex;text-align:center;background-color:#06516E;align-items: center;">
+                        <div class="bar1" style="display:flex;text-align:center;align-items: center;">
                             <div style="display:flex;flex-wrap: wrap;  position:relative;flex: 1 1 auto; align-items:center;">
                                 <div t-on-click="backButtonPopup"
                                  class="warehouse-operation-back-button-left">
@@ -115,7 +115,7 @@
 
 
                         </div>
-                        <div style="display:flex;justify-content:space-between;flex-direction: row-reverse;align-items:center;">
+                        <div class="bar2" style="display:flex;justify-content:space-between;background-color:#4EC1E0;flex-direction: row-reverse;align-items:center;">
                             <div class="mobile-tab-inventory-adjustment-enable" style="">
                                 <div t-on-click="backPage"
                                      style="margin: 7px; align-items:center;display: flex;">
@@ -240,7 +240,7 @@
                             <span t-esc="props.inventory_line.data.display_name"/>
                         </p>
                         <p style="font-size: 1.4rem; color: black;">
-                            <span t-esc="props.inventory_line.data.quantity" style="padding: 2px 5px;background-color: #06516e;border-radius: 3px;color: white;"/>
+                            <span t-esc="props.inventory_line.data.quantity" style="padding: 2px 5px;border-radius: 3px;color: white;"/>
                         </p>
                     </div>
                 </div>
@@ -272,7 +272,7 @@
                             <span t-esc="props.inventory_line.data.display_name"/>
                         </p>
                         <p style="font-size: 1.4rem; color: black;">
-                            <span t-esc="props.inventory_line.data.quantity" style="padding: 2px 5px;background-color: #06516e;border-radius: 3px;color: white;"/>
+                            <span t-esc="props.inventory_line.data.quantity" style="padding: 2px 5px;border-radius: 3px;color: white;"/>
                         </p>
                     </div>
                 </div>
