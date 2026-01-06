@@ -2,7 +2,7 @@
 
 <templates xml:space="preserve">
     <t t-name="custom_barcode_app.ScanningDisplay" owl="1">
-            <div style="font-family:'Argentum Sans'; height:100%;">
+            <div style="height:100%;">
                     <t>
                         <div id="popup1" class="validate_popup_overlay" t-if="state.validate_popup">
                             <div style="height:100%;">
@@ -86,7 +86,7 @@
                                     <SelectDropDown data="operation_types" selected_item="state.selected_operation_type" select_action="(selected_operation)=> this.changeSelectOperationType(selected_operation)" details="{icon_path:'/custom_barcode_app/static/src/img/icons8-warehouse-42.png', default_text:'Operation Types'}" />
                                 </div>
                                 <div t-on-click="addLocationPopup" style="margin: 7px;align-items:center;display: flex;  ">
-                                    <button style="background-color:#CEEBEE;padding: 0.4rem 1rem;border-radius: 0.4rem;font-size: 2rem;border: 0;"><i class="fa fa-plus"></i></button>
+                                    <button style="padding: 0.4rem 1rem;border-radius: 0.4rem;font-size: 2rem;border: 0;"><i class="fa fa-plus"></i></button>
                                 </div>
                                 <div style="position:relative;display: flex;">
                                     <div t-if="state.selected_operation_type.length>0 and state.selected_operation_type[0].default_location_src_id" t-attf-style="color : black;margin: 7px;display: flex;align-items: center;">
@@ -101,13 +101,13 @@
                                 </div>
                                 <div class="mobile-tab-inventory-adjustment">
                                       <div t-on-click="backPage" style="margin: 7px; align-items:center;display: flex;">
-                                        <button style="background-color:#CEEBEE;padding: 0.4rem 1rem;border-radius: 0.4rem;font-size: 2rem;border: 0;"><i class="fa fa-angle-left"></i></button>
+                                        <button style="padding: 0.4rem 1rem;border-radius: 0.4rem;font-size: 2rem;border: 0;"><i class="fa fa-angle-left"></i></button>
                                     </div>
                                     <div style="align-items:center;display:flex;">
                                         <h1 style="color:white;letter-spacing: 3px;font-weight: 600;font-family:'Montserrat';"><t t-esc="state.current_page"/>/<t t-esc="state.total_pages"/></h1>
                                     </div>
                                     <div t-on-click="nextPage1" style="margin: 7px;align-items:center;display: flex;  ">
-                                        <button style="background-color:#CEEBEE;padding: 0.4rem 1rem;border-radius: 0.4rem;font-size: 2rem;border: 0;"><i class="fa fa-angle-right"></i></button>
+                                        <button style="padding: 0.4rem 1rem;border-radius: 0.4rem;font-size: 2rem;border: 0;"><i class="fa fa-angle-right"></i></button>
                                     </div>
 
                                 </div>
@@ -119,13 +119,13 @@
                             <div class="mobile-tab-inventory-adjustment-enable" style="">
                                 <div t-on-click="backPage"
                                      style="margin: 7px; align-items:center;display: flex;">
-                                    <button style="background-color:#CEEBEE;padding: 0.2rem 1rem;border-radius: 0.4rem;font-size: 2rem;border: 0;"><i class="fa fa-angle-left"></i></button>
+                                    <button style="padding: 0.2rem 1rem;border-radius: 0.4rem;font-size: 2rem;border: 0;"><i class="fa fa-angle-left"></i></button>
                                 </div>
                                 <div style="align-items:center;display:flex;">
                                     <h1 style="color:black;letter-spacing: 3px;font-weight: 600;font-family:'Montserrat';"><t t-esc="state.current_page"/>/<t t-esc="state.total_pages"/></h1>
                                 </div>
                                 <div t-on-click="nextPage1" style="margin: 7px;align-items:center;display: flex;  ">
-                                    <button style="background-color:#CEEBEE;padding: 0.2rem 1rem;border-radius: 0.4rem;font-size: 2rem;border: 0;"><i class="fa fa-angle-right"></i></button>
+                                    <button style="padding: 0.2rem 1rem;border-radius: 0.4rem;font-size: 2rem;border: 0;"><i class="fa fa-angle-right"></i></button>
                                 </div>
                             </div>
                             <div style="margin: 5px 5px 5px 5px;">
@@ -228,7 +228,7 @@
      </t>
 
     <t t-name="custom_barcode_app.BarcodeLineTransfer" owl="1">
-        <div class="warehouse-operation-barcode-line" t-attf-id="barcode_line_{{props.inventory_line.id}}" t-on-click="()=>props.change_is_select(props.inventory_line)" t-attf-style="border:{{props.inventory_line.is_selected ? '4px solid ' : '4px solid transparent'}};background-color:#CEEBEE;margin: 0.5rem;font-family: 'Argentum Sans'; font-weight:500;" >
+        <div class="warehouse-operation-barcode-line" t-attf-id="barcode_line_{{props.inventory_line.id}}" t-on-click="()=>props.change_is_select(props.inventory_line)" t-attf-style="border:{{props.inventory_line.is_selected ? '4px solid ' : '4px solid transparent'}};margin: 0.5rem;font-family: 'Argentum Sans'; font-weight:500;" >
             <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
                 <div style="display: flex; flex-wrap: nowrap;">
                     <div style=" margin-right:10px; width:115px;height:80px;">
@@ -260,7 +260,7 @@
     </t>
 
     <t t-name="custom_barcode_app.BarcodeLineTransferUnique" owl="1">
-        <div class="warehouse-operation-barcode-line" t-attf-id="barcode_line_{{props.inventory_line.id}}" t-attf-style=" border:{{props.inventory_line.is_selected ? 'solid 4px' : 'none'}};background-color:#CEEBEE;margin: 0.5rem;font-family: 'Argentum Sans'; font-weight:500;" >
+        <div class="warehouse-operation-barcode-line" t-attf-id="barcode_line_{{props.inventory_line.id}}" t-attf-style=" border:{{props.inventory_line.is_selected ? 'solid 4px' : 'none'}};margin: 0.5rem;font-family: 'Argentum Sans'; font-weight:500;" >
             <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
                 <div style="display: flex; flex-wrap: wrap;">
                     <div style=" margin-right:10px; width:130px;height:80px;">
