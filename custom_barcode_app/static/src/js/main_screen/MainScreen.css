@@ -37,11 +37,20 @@
 .button-1:focus {
     background-color: #4EC1E0;
 }
-.icon-svg{
+
+.icon-svg {
     height: 70px;
 }
-.main-screen-title{
+
+.main-screen-title {
     font-size: 16px;
+    display: flex;
+    idth: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E7EB;
+    padding: 16px;
 }
 
 
@@ -55,15 +64,18 @@
         overflow-y: auto;
     }
 }
+
 @media (max-width: 390px) {
-    .button-1{
+    .button-1 {
         height: 135px;
-    width: 135px;
+        width: 135px;
     }
-    .icon-svg{
-    height: 65px;
-}
-    .main-screen-title{
-    font-size: 14px;
-}
+
+    .icon-svg {
+        height: 65px;
+    }
+
+    .main-screen-title {
+        font-size: 14px;
+    }
 }
