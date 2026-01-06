@@ -11,8 +11,8 @@
 
 .button-1 {
     font-family: 'Argentum Sans';
-    background-color: #E5E7EB;
-    border-radius: 8px;
+    background-color: #F5F6F7;
+    border-radius: 5px;
     border-style: none;
     box-sizing: border-box;
     color: #000000;
@@ -41,7 +41,8 @@
 
 .button-1:hover,
 .button-1:focus {
-    background-color: #4EC1E0;
+    background-color: #ebe8e8;
+    border: 1px solid #ebe3e3;
 }
 
 .icon-svg {
