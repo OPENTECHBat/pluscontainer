@@ -13,6 +13,7 @@
                         <li>Escanee un <b>producto</b> para ver su ubicación y cantidad.</li>
                     </ul>
 <div style="display:flex; justify-content:center; align-items:flex-start; height:100%; padding-top:30px;">
+<div class="all-w">
                         <button t-on-click="startCreateTransfer" class="button-1">
                             <div>
                                 <div>
@@ -58,6 +59,7 @@
                         </button>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     </t>
