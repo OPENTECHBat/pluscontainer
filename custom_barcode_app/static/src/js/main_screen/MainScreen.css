@@ -13,7 +13,6 @@
     box-sizing: border-box;
     color: #000000;
     cursor: pointer;
-    display: inline-block;
     font-size: 16px;
     font-weight: 500;
     height: 150px;
@@ -31,6 +30,13 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E7EB;
+    padding: 16px;
 }
 
 .button-1:hover,
@@ -44,13 +50,6 @@
 
 .main-screen-title {
     font-size: 16px;
-    display: flex;
-    width: 100%;
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-    background-color: #E5E7EB;
-    padding: 16px;
 }
 
 
