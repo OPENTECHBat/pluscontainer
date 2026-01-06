@@ -86,7 +86,7 @@
                                     <SelectDropDown data="operation_types" selected_item="state.selected_operation_type" select_action="(selected_operation)=> this.changeSelectOperationType(selected_operation)" details="{icon_path:'/custom_barcode_app/static/src/img/icons8-warehouse-42.png', default_text:'Operation Types'}" />
                                 </div>
                                 <div t-on-click="addLocationPopup" style="margin: 7px;align-items:center;display: flex;  ">
-                                    <button style="padding: 0.4rem 1rem;border-radius: 0.4rem;font-size: 2rem;border: 0;"><i class="fa fa-plus"></i></button>
+                                    <button style="padding: 0.4rem 1rem;border-radius: 0.4rem;border: 0;"><i class="fa fa-plus"></i></button>
                                 </div>
                                 <div style="position:relative;display: flex;">
                                     <div t-if="state.selected_operation_type.length>0 and state.selected_operation_type[0].default_location_src_id" t-attf-style="color : black;margin: 7px;display: flex;align-items: center;">
@@ -101,13 +101,13 @@
                                 </div>
                                 <div class="mobile-tab-inventory-adjustment">
                                       <div t-on-click="backPage" style="margin: 7px; align-items:center;display: flex;">
-                                        <button style="padding: 0.4rem 1rem;border-radius: 0.4rem;font-size: 2rem;border: 0;"><i class="fa fa-angle-left"></i></button>
+                                        <button style="padding: 0.4rem 1rem;border-radius: 0.4rem;border: 0;"><i class="fa fa-angle-left"></i></button>
                                     </div>
                                     <div style="align-items:center;display:flex;">
                                         <h1 style="color:white;letter-spacing: 3px;font-weight: 600;font-family:'Montserrat';"><t t-esc="state.current_page"/>/<t t-esc="state.total_pages"/></h1>
                                     </div>
                                     <div t-on-click="nextPage1" style="margin: 7px;align-items:center;display: flex;  ">
-                                        <button style="padding: 0.4rem 1rem;border-radius: 0.4rem;font-size: 2rem;border: 0;"><i class="fa fa-angle-right"></i></button>
+                                        <button style="padding: 0.4rem 1rem;border-radius: 0.4rem;border: 0;"><i class="fa fa-angle-right"></i></button>
                                     </div>
 
                                 </div>
