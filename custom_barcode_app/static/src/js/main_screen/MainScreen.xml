@@ -7,7 +7,7 @@
 
                 <div class="main-screen-container">
 
-                    <h1 style="margin-bottom:20px;font-weight: 600;font-size: 2.5rem;font-family:'Montserrat';">Barcode Scanning</h1>
+                    <h1 style="margin-bottom:20px;font-weight: 600;font-size: 2.5rem">Barcode Scanning</h1>
                     <div>
                         <i class="fa fa-barcode" style="text-align:center; font-size:120px;"/>
                     </div>
