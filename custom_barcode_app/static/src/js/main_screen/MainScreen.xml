@@ -5,8 +5,8 @@
         <div style="height:100%; overflow-y:auto;">
             <div style="display: flex; justify-content: center; align-items: center;height:100%; background-color:#F3F4F6; font-family:Argentum Sans;">
                 <div class="main-screen-container">
-                    <h1 style="margin-bottom:20px;font-weight: 600;font-size:1em">Barcode Scanning</h1>
-                    <ul class="text-left mb-sm-5 pl-4" style="display: inline-block;font-size:1rem; text-align:left">
+                    <h1 style="margin-bottom:20px;font-weight: 600;font-size:2em">Barcode Scanning</h1>
+                    <ul class="text-left mb-sm-5 pl-4" style="display: inline-block;font-size:0.8rem; text-align:left">
                         <li>Escanee un <b>tipo de operación</b> para crear una nueva transferencia.</li>
                         <li>Escanee una <b>ubicación</b> para crear una nueva transferencia desde esta ubicación.</li>
                         <li>Escanee un <b>documento</b> para abrirlo.</li>
