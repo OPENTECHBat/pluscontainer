@@ -23,6 +23,11 @@
     background-color: transparent !important;
 }
 
+.dropdown-location-warehouse-image,
+.dropdown-location-warehouse-name {
+    background-color: none !important
+}
+
 .dropdown-div h2,
 .bar1 h2,
 .bar2 h2 {
