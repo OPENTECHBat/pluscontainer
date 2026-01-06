@@ -13,7 +13,7 @@
                         <li>Escanee un <b>producto</b> para ver su ubicación y cantidad.</li>
                     </ul>
 <div style="display:flex; justify-content:center; align-items:flex-start; height:100%; background-color:#F3F4F6; padding-top:30px;">
-                        <button t-on-click="startCreateTransfer" class="button-1" style="display: flex; flex-wrap: wrap;justify-content: center;align-items:center;">
+                        <button t-on-click="startCreateTransfer" class="button-1" style="display: flex; flex-wrap: wrap;justify-content: center;align-items:center; width:100%; padding:16px; background-color:#E5E7EB;">
                             <div>
                                 <div>
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
