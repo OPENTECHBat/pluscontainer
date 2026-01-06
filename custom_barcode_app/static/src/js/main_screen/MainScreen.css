@@ -11,7 +11,7 @@
 
 .button-1 {
     font-family: 'Argentum Sans';
-    background-color: #F5F6F7;
+    background-color: #e8eaeb;
     border-radius: 5px;
     border-style: none;
     box-sizing: border-box;
@@ -41,7 +41,7 @@
 
 .button-1:hover,
 .button-1:focus {
-    background-color: #ebe8e8;
+    background-color: #e7e1e1;
     border: 1px solid #ebe3e3;
 }
 
