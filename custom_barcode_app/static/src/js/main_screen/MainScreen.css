@@ -5,6 +5,10 @@
     padding: 2rem;
 }
 
+.all-w {
+    width: 100%;
+}
+
 .button-1 {
     font-family: 'Argentum Sans';
     background-color: #E5E7EB;
@@ -24,17 +28,14 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 100%;
     height: auto;
-    /* <- clave para que no quede cuadrado */
     min-height: 64px;
-    /* alto “botón” */
     padding: 16px;
+    margin-bottom: 10px;
 
 }
 
