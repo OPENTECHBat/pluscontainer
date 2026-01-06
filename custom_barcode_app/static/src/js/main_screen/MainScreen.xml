@@ -12,7 +12,7 @@
                         <li>Escanee un <b>documento</b> para abrirlo.</li>
                         <li>Escanee un <b>producto</b> para ver su ubicación y cantidad.</li>
                     </ul>
-<div style="display:flex; justify-content:center; align-items:flex-start; height:100%; background-color:#F3F4F6; padding-top:30px;">
+<div style="display:flex; justify-content:center; align-items:flex-start; height:100%; padding-top:30px;">
                         <button t-on-click="startCreateTransfer" class="button-1">
                             <div>
                                 <div>
