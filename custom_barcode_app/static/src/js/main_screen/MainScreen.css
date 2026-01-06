@@ -17,6 +17,10 @@
     background-color: #E9ECEF;
 }
 
+.dropdown-div {
+    background-color: none !important;
+}
+
 .button-1 {
     font-family: 'Argentum Sans';
     background-color: #e8eaeb;
