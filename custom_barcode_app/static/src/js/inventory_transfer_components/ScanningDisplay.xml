@@ -115,7 +115,7 @@
 
 
                         </div>
-                        <div style="display:flex;justify-content:space-between;background-color:#4EC1E0;flex-direction: row-reverse;align-items:center;">
+                        <div style="display:flex;justify-content:space-between;flex-direction: row-reverse;align-items:center;">
                             <div class="mobile-tab-inventory-adjustment-enable" style="">
                                 <div t-on-click="backPage"
                                      style="margin: 7px; align-items:center;display: flex;">
