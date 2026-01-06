@@ -7,7 +7,7 @@
 
 .button-1 {
     font-family: 'Argentum Sans';
-    background-color: #88C3CC;
+    background-color: #E5E7EB;
     border-radius: 8px;
     border-style: none;
     box-sizing: border-box;
@@ -15,28 +15,27 @@
     cursor: pointer;
     font-size: 16px;
     font-weight: 500;
-    height: 150px;
-    width: 150px;
     line-height: 20px;
-    list-style: none;
     margin: 0;
     outline: none;
-    /*padding: 10px 16px;*/
-    position: relative;
     text-align: center;
     text-decoration: none;
     transition: color 100ms;
-    vertical-align: baseline;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+
     display: flex;
-    width: 100%;
-    box-sizing: border-box;
     justify-content: center;
     align-items: center;
-    background-color: #E5E7EB;
+
+    width: 100%;
+    height: auto;
+    /* <- clave para que no quede cuadrado */
+    min-height: 64px;
+    /* alto “botón” */
     padding: 16px;
+
 }
 
 .button-1:hover,
