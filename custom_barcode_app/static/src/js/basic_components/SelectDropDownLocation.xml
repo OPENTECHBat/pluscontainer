@@ -82,7 +82,7 @@
 
         </div>
 
-        <div t-else="" t-attf-style="font-family: 'Argentum Sans';text-align:left;background-color:#CEEBEE; width:100%;border-radius: 0.4rem;">
+        <div t-else="" t-attf-style="font-family: 'Argentum Sans';text-align:left; width:100%;border-radius: 0.4rem;">
              <div t-on-click="clickDropDown" class="dropdown-location-div" style="display: flex;align-items: center;" >
                 <div class="dropdown-location-warehouse-image">
                     <img t-attf-src="{{'/custom_barcode_app/static/src/img/warehouse-alt.svg'}}" style="width: 3.5rem;margin-right:0.41rem;"/>

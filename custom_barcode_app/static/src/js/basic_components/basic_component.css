@@ -21,7 +21,6 @@
     position: absolute;
     margin-top: 10px;
     padding: 2px;
-    background-color: #CEEBEE;
     border-radius: 0.5rem;
     left: 0;
     right: 0;
@@ -310,6 +309,5 @@
 @media (max-width: 540px) {
     .dropdown-location-warehouse-name {
         margin: 0;
-        font-size: 1.15rem;
     }
 }
