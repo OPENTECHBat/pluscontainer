@@ -2,8 +2,6 @@
 
 .select-tag {
   padding: 8px 12px;
-  color: #333333;
-  background-color: #EEEEEE;
   border: 1px solid #dddddd;
   cursor: pointer;
   border-radius: 5px;
@@ -16,7 +14,7 @@
 .line-button {
   font-family: 'Argentum Sans';
   border-radius: 8px;
-  border-style: 1px solid #9a9ca5;
+  border: 1px solid #9a9ca5;
   box-sizing: border-box;
   cursor: pointer;
   display: inline-block;
