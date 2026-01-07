@@ -38,12 +38,9 @@
                         <div id="popup1" class="validate_popup_overlay" t-if="state.add_location_popup">
                                 <div style="height:100%;">
                                     <div class="validate_popup_responsive" style="text-align:center;">
-                                            <h2 style="font-weight: 600; text-align:center;">Add Location <!--agrego flecha-->
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
-  <path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/>
-</svg></h2>
+                                            <h2 style="font-weight: 600; text-align:center;">Add Location</h2>
                                             <div>
-                                                <SelectAddDropDownLocation data="locations.locations_list" selected_item="locations.location" select_action="(selected_location)=>selectAddLocation(selected_location)" details="{icon_path:'/custom_barcode_app/static/src/img/icons8-warehouse-42.png', default_text:'Location'}" />
+                                                <SelectAddDropDownLocation data="locations.locations_list" selected_item="locations.location" select_action="(selected_location)=>selectAddLocation(selected_location)" details="{icon_path:'/custom_barcode_app/static/src/img/selector.png', default_text:'Location'}" />
                                             </div>
                                              <div style="display:flex; justify-content: space-evenly;margin-top: 20px;">
                                                 <button class="validate-popup-button-discard-responsive" t-on-click="backLocationPopup">Discard</button>
