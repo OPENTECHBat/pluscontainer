@@ -101,7 +101,7 @@
                     </div>
                     <div style=" position:fixed;bottom: 0px;width: 100%;">
                         <button type="button" class="confirm-button" t-on-click="addProductPopup">Add Products</button>
-                        <button t-attf-style ="{{ display_parts_list.length==1 and display_parts_list[0].length==0 ? 'background-color:red' :''}};pointer-events:{{ display_parts_list.length==1 and display_parts_list[0].length==0 ? 'none' :'auto'}};" type="button" t-on-click="validatePopUp" class="confirm-button"><span t-if="state.groups.group_stock_manager">Validate</span><span t-else="">Apply</span></button>
+                        <button t-attf-style ="{{ display_parts_list.length==1 and display_parts_list[0].length==0 ? 'background-color:#2E3944' :''}};pointer-events:{{ display_parts_list.length==1 and display_parts_list[0].length==0 ? 'none' :'auto'}};" type="button" t-on-click="validatePopUp" class="confirm-button"><span t-if="state.groups.group_stock_manager">Validate</span><span t-else="">Apply</span></button>
                     </div>
                 </t>
         </div>
@@ -111,7 +111,7 @@
 
 
         <t t-name="custom_barcode_app.BarcodeLine" owl="1">
-        <div class="warehouse-operation-barcode-line" t-attf-id="barcode_line_{{props.inventory_line.id}}" t-on-click="()=> props.change_is_select(props.inventory_line)" t-attf-style="background-color:{{props.inventory_line.genuine_inventory_line ? '#ffffffff' : '#F7C6C5' }}; border:{{props.inventory_line.is_selected ? '4px solid ' : '4px solid transparent'}};margin: 0.5rem;font-family: 'Argentum Sans'; font-weight:500;" >
+        <div class="warehouse-operation-barcode-line" t-attf-id="barcode_line_{{props.inventory_line.id}}" t-on-click="()=> props.change_is_select(props.inventory_line)" t-attf-style="background-color:{{props.inventory_line.genuine_inventory_line ? '#ffffffff' : '#F7C6C5' }}; border:{{props.inventory_line.is_selected ? '2px solid ' : '4px solid transparent'}};margin: 0.5rem;font-family: 'Argentum Sans'; font-weight:500;" >
             <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
                 <div style="display: flex; flex-wrap: nowrap;">
                     <div style=" margin-right:10px; width:120px;height:80px;">
