@@ -20,7 +20,7 @@
                         <div style="display:flex; flex-flow: row wrap;align-content: flex-start;height: 100%;">
                             <div t-foreach="warehouses_with_operation_types" t-as="warehouse"
                                  t-key="warehouse_index"
-                                 style="flex: 1 1 auto; width:300px;font-family: 'Argentum Sans'; font-weight:600; margin: 0.5rem 0.5rem;background-color:#CEEBEE;">
+                                 style="flex: 1 1 auto; width:300px;font-family: 'Argentum Sans'; font-weight:600; margin: 0.5rem 0.5rem;">
                                 <div style="display:flex;background-color:#06516E; padding:0.8rem">
 
 
