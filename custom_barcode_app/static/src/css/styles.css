@@ -54,7 +54,6 @@
   display: inline-block;
   font-size: 16px;
   font-weight: 600;
-  height: 5rem;
   width: 50%;
   line-height: 20px;
   list-style: none;
@@ -78,7 +77,7 @@
 
 .confirm-button:hover,
 .confirm-button:focus {
-  background-color: green;
+  /*background-color: green;*/
 }
 
 /*body header{*/
