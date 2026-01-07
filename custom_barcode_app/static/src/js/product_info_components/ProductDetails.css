@@ -73,7 +73,7 @@
 
 .confirm-button:hover,
 .confirm-button:focus {
-    background-color: red;
+    background-color: #d8dadd;
 }
 
 .product-info-container {
