@@ -66,7 +66,7 @@
 
                         </div>
                             <div>
-                                <div  style="text-align:center;background-color:#06516E;padding:1rem;border-top:2px solid white;">
+                                <div  style="text-align:center;padding:1rem;border-top:2px solid white;">
                                     <i class="fa fa-chevron-circle-left" style="color:white;font-size:5rem;" t-on-click="backButton"></i>
                                     <p style="font-size:1.4rem;color:white;">Go Back</p>
                                 </div>
@@ -74,14 +74,14 @@
                     </t>
                 <t t-elif="state.scanning_display">
                     <t t-if="picking.state == 'cancel'">
-                        <div style="display:flex;text-align:center;background-color:#06516E;align-items: center; height:84px;">
+                        <div style="display:flex;text-align:center;align-items: center; height:84px;">
                             <div t-on-click="backButton"
                                  class="warehouse-operation-back-button-left">
                                 <i class="fa fa-angle-left"></i>
                             </div>
                         </div>
                         <div>
-                            <div  style="text-align:center;background-color:#06516E;padding:1rem;border-top:2px solid white;">
+                            <div  style="text-align:center;padding:1rem;border-top:2px solid white;">
                                 <i class="fa fa-exclamation-triangle" style="color:white;font-size:5rem;"></i>
                                 <p style="font-size:1.4rem;color:white;">This picking is cancelled</p>
                             </div>
@@ -89,14 +89,14 @@
 
                     </t>
                     <t t-elif="picking.state == 'done'">
-                        <div style="display:flex;text-align:center;background-color:#06516E;align-items: center; height:84px;">
+                        <div style="display:flex;text-align:center;align-items: center; height:84px;">
                             <div t-on-click="backButton"
                                  class="warehouse-operation-back-button-left">
                                 <i class="fa fa-angle-left"></i>
                             </div>
                         </div>
                         <div>
-                            <div  style="text-align:center;background-color:#06516E;padding:1rem;border-top:2px solid white;">
+                            <div  style="text-align:center;padding:1rem;border-top:2px solid white;">
                                 <i class="fa fa-exclamation-triangle" style="color:white;font-size:5rem;"></i>
                                 <p style="font-size:1.4rem;color:white;">This picking is done</p>
                             </div>
@@ -104,7 +104,7 @@
 
                     </t>
                     <t t-elif="picking.state == 'assigned' or picking.state == 'confirmed' or picking.state == 'draft' or picking.state == 'waiting' ">
-                        <div style="display:flex;text-align:center;background-color:#06516E;align-items: center;min-height:84px;">
+                        <div style="display:flex;text-align:center;align-items: center;min-height:84px;">
                             <div style="display:flex;flex-wrap: wrap;  position:relative;flex: 1 1 auto; align-items:center;">
                                     <div t-on-click="backButtonPopup"
                                  class="warehouse-operation-back-button-left">
@@ -172,7 +172,7 @@
                        </div>
 
                         <div style="background-color:#4EC1E0; text-align: center;padding: 0.15rem;">
-                                <p style="color:#06516e;margin: 0;font-size: 1.2rem;font-weight: 600;">Scan product or location</p>
+                                <p style="margin: 0;font-size: 1.2rem;font-weight: 600;">Scan product or location</p>
                         </div>
 
                         <t t-if="state.display_parts.length == state.total_pages">
@@ -205,7 +205,7 @@
                         </t>
                 </t>
                 <t t-else="">
-                    <div style="display:flex;text-align:center;background-color:#06516E;align-items: center; height:84px;">
+                    <div style="display:flex;text-align:center;align-items: center; height:84px;">
                             <div t-on-click="backButtonPopup"
                                  style="color : white; padding: 0.1rem 2rem; font-size: 50px;">
                                 <i class="fa fa-angle-left"></i>
@@ -234,7 +234,7 @@
                                 <div style="margin-right:0.8rem;">
                                 <t>
                                     <div t-if="props.inventory_line.data.quantity==0" style=" display:flex;">
-                                        <div style="padding: 2px 5px;background-color: #06516e;border-radius: 5px;color: white;border: 0.2rem solid #06516e; margin-right:5px;">
+                                        <div style="padding: 2px 5px;border-radius: 5px;color: white;margin-right:5px;">
                                             <span style="" t-esc="props.inventory_line.data.qty_done.toString().substring(0, 8)"/>
                                         </div>
 <!--                                        <div style="padding: 2px 5px;background-color: #06516e;border-radius: 5px;color: white;border: 0.2rem solid #06516e;">-->
@@ -245,10 +245,10 @@
                                         <div style="padding: 2px 5px;background-color: #CEEBEE;border-radius: 5px 0px 0px 5px;color: black;border: 0.2rem solid;border-right: 0;">
                                             <span style="" t-esc="props.inventory_line.data.qty_done.toString().substring(0, 8)"/>
                                         </div>
-                                        <div style="padding: 2px 5px;background-color: #06516e;border-radius: 0px 5px 5px 0px;color: white;border: 0.2rem solid #06516e;border-left: 0; margin-right:5px;">
+                                        <div style="padding: 2px 5px;border-radius: 0px 5px 5px 0px;color: white;border: 0.2rem solid #06516e;border-left: 0; margin-right:5px;">
                                             <span style="" t-esc="props.inventory_line.data.quantity"/>
                                         </div>
-<!--                                        <div style="padding: 2px 5px;background-color: #06516e;border-radius: 5px;color: white;border: 0.2rem solid #06516e;">-->
+<!--                                        <div style="padding: 2px 5px;border-radius: 5px;color: white;border: 0.2rem solid #06516e;">-->
 <!--                                            <span style="font-size:1.1rem" t-esc="props.inventory_line.data.product_uom_id[1]"/>-->
 <!--                                        </div>-->
                                     </div>
