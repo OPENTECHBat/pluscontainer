@@ -46,9 +46,8 @@
 }
 
 .confirm-button {
-  font-family: 'Argentum Sans';
   background-color: #e5e5e6;
-  border-radius: 0px;
+  border-radius: 5px;
   border-style: none;
   box-sizing: border-box;
   cursor: pointer;
@@ -70,6 +69,11 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+}
+
+.botones-footer {
+  background-color: white;
+  padding: 5px;
 }
 
 .confirm-button:hover,
