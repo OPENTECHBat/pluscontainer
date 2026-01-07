@@ -32,15 +32,15 @@
                         <h2 style="font-size: 1.2rem;font-weight: 400;"><span t-esc="props.selected_item[0].name"/></h2>
                     </t>
                     <t t-else="">
-                        <h2 style="font-weight: 600;font-size: 1.5rem;"><span t-esc="props.details.default_text"/></h2>
+                        <h2 style="font-weight: 600;"><span t-esc="props.details.default_text"/></h2>
                     </t>
                 </div>
             </div>
             <t t-if="state.list_visible">
-            <div  class="search-bar-list" style=" position: absolute;overflow-y: auto;margin-top: 10px;border-radius: 0.5rem;left: 0;right: 0;max-height: calc(100vh - 134px - 160px);cursor: pointer; border: 1px solid #4a4a4a;z-index: 2; ">
+            <div  class="search-bar-list" style=" position: absolute;overflow-y: auto;margin-top: 10px;border-radius: 0.5rem;left: 0;right: 0;max-height: calc(100vh - 134px - 160px);cursor: pointer;z-index: 2; ">
                 <table class="product-select-dropdown" >
                     <t t-foreach="props.data" t-as="i" t-key="i_index">
-                        <tr style="font-family: 'Argentum Sans'; " t-on-click="()=> this.handleListClick(i)">
+                        <tr t-on-click="()=> this.handleListClick(i)">
                             <td>
                                 <div style="display: flex;align-items: center;">
                                     <div style="margin: 0.4rem;">
@@ -66,10 +66,10 @@
                                     </div>
 
                                     <div style="text-align: left;">
-                                        <p style="font-size: 1.4rem;overflow: hidden;margin:0;font-weight: 600;">
+                                        <p style="overflow: hidden;margin:0;font-weight: 600;">
                                             <span t-esc="i.warehouse_id[1]"/>
                                         </p>
-                                        <p style="font-size: 1.1rem;text-align: left;overflow: hidden;margin:0;font-weight: 400;">
+                                        <p style="text-align: left;overflow: hidden;margin:0;font-weight: 400;">
                                             <span t-esc="i.name"/>
                                         </p>
 
@@ -150,10 +150,10 @@
                                     </div>
 
                                     <div style="text-align: left;">
-                                        <p style="font-size: 1.4rem;overflow: hidden;margin:0;font-weight: 600;">
+                                        <p style="overflow: hidden;margin:0;font-weight: 600;">
                                             <span t-esc="i.warehouse_id[1]"/>
                                         </p>
-                                        <p style="font-size: 1.1rem;text-align: left;overflow: hidden;margin:0;font-weight: 400;">
+                                        <p style="text-align: left;overflow: hidden;margin:0;font-weight: 400;">
                                             <span t-esc="i.display_name"/>
                                         </p>
                                     </div>
