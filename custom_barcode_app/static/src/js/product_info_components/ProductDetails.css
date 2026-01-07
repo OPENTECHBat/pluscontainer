@@ -73,16 +73,17 @@
 
 .confirm-button:hover,
 .confirm-button:focus {
-    background-color: #2E3944;
+    background-color: red;
 }
 
 .product-info-container {
     width: 80%;
     margin-top: 2.5rem;
 }
+
 @media (max-width: 540px) {
-.product-info-container {
-    width: 95%;
-    margin-top: 2.5rem;
-}
+    .product-info-container {
+        width: 95%;
+        margin-top: 2.5rem;
+    }
 }
