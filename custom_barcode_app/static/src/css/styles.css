@@ -47,11 +47,10 @@
 
 .confirm-button {
   font-family: 'Argentum Sans';
-  background-color: #DEE2E6;
+  background-color: #e5e5e6;
   border-radius: 0px;
   border-style: none;
   box-sizing: border-box;
-  color: white;
   cursor: pointer;
   display: inline-block;
   font-size: 16px;
