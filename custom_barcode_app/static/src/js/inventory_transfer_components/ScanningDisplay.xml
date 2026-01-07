@@ -104,7 +104,7 @@
                                         <button style="padding: 0.4rem 1rem;border-radius: 0.4rem;border: 0;"><i class="fa fa-angle-left"></i></button>
                                     </div>
                                     <div style="align-items:center;display:flex;">
-                                        <h1 style="letter-spacing: 3px;font-weight: 600;font-family:'Montserrat';"><t t-esc="state.current_page"/>/<t t-esc="state.total_pages"/></h1>
+                                        <h1 style="letter-spacing: 3px;font-weight: 600;"><t t-esc="state.current_page"/>/<t t-esc="state.total_pages"/></h1>
                                     </div>
                                     <div t-on-click="nextPage1" style="margin: 7px;align-items:center;display: flex;  ">
                                         <button style="padding: 0.4rem 1rem;border-radius: 0.4rem;border: 0;"><i class="fa fa-angle-right"></i></button>
@@ -122,7 +122,7 @@
                                     <button style="padding: 0.2rem 1rem;border-radius: 0.4rem;border: 0;"><i class="fa fa-angle-left"></i></button>
                                 </div>
                                 <div style="align-items:center;display:flex;">
-                                    <h1 style="color:black;letter-spacing: 3px;font-weight: 600;font-family:'Montserrat';"><t t-esc="state.current_page"/>/<t t-esc="state.total_pages"/></h1>
+                                    <h1 style="color:black;letter-spacing: 3px;font-weight: 600;"><t t-esc="state.current_page"/>/<t t-esc="state.total_pages"/></h1>
                                 </div>
                                 <div t-on-click="nextPage1" style="margin: 7px;align-items:center;display: flex;  ">
                                     <button style="padding: 0.2rem 1rem;border-radius: 0.4rem;border: 0;"><i class="fa fa-angle-right"></i></button>
