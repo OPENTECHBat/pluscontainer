@@ -156,7 +156,7 @@
                              </div>
 
                         </t>
-                        <div style=" position:fixed;bottom: 0px;width: 100%; color:red">
+                        <div class="botones-footer" style=" position:fixed;bottom: 0px;width: 100%;">
                             <button type="button" class="confirm-button" t-on-click="addProductPopup">Add Products</button>
 <!--                            <button type="button" t-on-click="validateTransferPrepareLines"-->
 <!--                                        class="confirm-button" t-attf-style ="{{ state.display_parts.length==0 ? 'background-color:#2E3944' :''}};pointer-events:{{ state.display_parts.length==0 ? 'none' :'auto'}};">Validate</button>-->
