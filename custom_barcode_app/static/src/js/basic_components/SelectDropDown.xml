@@ -48,7 +48,7 @@
                                         <p style="overflow: hidden;margin:0;font-weight: 600;">
                                             <span t-esc="i.warehouse_id[1]"/>
                                         </p>
-                                        <p style="text-align: left;overflow: hidden;margin:0;font-weight: 400;">
+                                        <p style="text-align: left;overflow: hidden;margin:0;">
                                             <span t-esc="i.name"/>
                                         </p>
 
