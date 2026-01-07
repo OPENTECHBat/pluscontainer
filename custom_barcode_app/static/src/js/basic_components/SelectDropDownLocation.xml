@@ -18,7 +18,7 @@
                 </div>
 
             </div>
-            <div t-if="state.list_visible and props.data.length>0" class="dropdown-location-list" t-attf-style="left:0;width: max-content; min-width:200px;">
+            <div t-if="state.list_visible and props.data.length>0" class="dropdown-location-list porobando" t-attf-style="left:0;width: max-content; min-width:200px;">
                 <ul>
                     <t t-foreach="props.data" t-as="i" t-key="i_index">
                         <li t-on-click="()=> this.handleListClick(i)"><img t-attf-src="{{'/custom_barcode_app/static/src/img/warehouse-alt.svg'}}" style="width:1.5rem;margin-right:0.41rem;"/><span t-esc="i[1]"/></li>
@@ -28,7 +28,7 @@
 
         </div>
 
-        <div t-else="" t-attf-style="font-family: 'Argentum Sans';text-align:left; width:100%;border-radius: 0.4rem;">
+        <div t-else="" t-attf-style="text-align:left; width:100%;border-radius: 0.4rem;">
              <div t-on-click="clickDropDown" class="dropdown-location-div" style="display: flex;align-items: center;" >
                 <div class="dropdown-location-warehouse-image">
                     <img t-attf-src="{{'/custom_barcode_app/static/src/img/warehouse-alt.svg'}}" style="width: 20px;margin-right:0.41rem;"/>
@@ -44,7 +44,7 @@
 
             </div>
 
-            <div t-if="state.list_visible and props.data.length>0" class="dropdown-location-list" t-attf-style="left:0;width: max-content; min-width:200px;">
+            <div t-if="state.list_visible and props.data.length>0" class="dropdown-location-list probando2" t-attf-style="left:0;width: max-content; min-width:200px;">
                 <ul>
                     <t t-foreach="props.data" t-as="i" t-key="i_index">
                         <li t-on-click="()=>this.handleListClick(i)"><img t-attf-src="{{'/custom_barcode_app/static/src/img/warehouse-alt.svg'}}" style="width:1.5rem;margin-right:0.41rem;"/><span t-esc="i[1]"/></li>
