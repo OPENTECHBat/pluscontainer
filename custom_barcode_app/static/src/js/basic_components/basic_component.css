@@ -52,6 +52,10 @@
 
 }
 
+.dropdown-location-list span {
+    font-size: 0.8rem;
+}
+
 .dropdown-location-list {
     position: absolute;
     margin-top: 10px;
