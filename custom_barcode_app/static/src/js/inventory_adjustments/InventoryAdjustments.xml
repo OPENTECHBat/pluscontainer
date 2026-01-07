@@ -197,7 +197,7 @@
                     <t t-foreach="props.internal_locations" t-as="warehouse_line" t-key="warehouse_line_index">
                         <thead>
                             <tr style="text-align: center;">
-                                <th style="background-color: #06516e;">
+                                <th>
                                     <h1 style="font-size: 1.8rem;overflow: hidden;margin:0;font-weight: 600; color:white;font-family:'Montserrat';"><span t-esc="warehouse_line.warehouse[1]"/></h1>
                                 </th>
                             </tr>
