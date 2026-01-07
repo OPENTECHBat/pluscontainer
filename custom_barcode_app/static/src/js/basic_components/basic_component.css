@@ -76,31 +76,16 @@
     padding: 2.5px 10px;
 }
 
-.dropdown-location-list li:hover {
-    color: #FFFFFF;
-    background-color: #06516E;
-}
+.dropdown-location-list li:hover {}
 
-.list-operation .ready-count-box {
-    background-color: #06516E;
-    color: #FFFFFF;
-}
+.list-operation .ready-count-box {}
 
 .list-operation:hover,
-.list-operation:focus {
-    background-color: #06516E;
-    color: #FFFFFF;
-}
+.list-operation:focus {}
 
-.list-operation:focus .ready-count-box {
-    background-color: white;
-    color: #06516E;
-}
+.list-operation:focus .ready-count-box {}
 
-.list-operation:hover .ready-count-box {
-    background-color: white;
-    color: #06516E;
-}
+.list-operation:hover .ready-count-box {}
 
 .validate_popup_overlay {
     position: fixed;
