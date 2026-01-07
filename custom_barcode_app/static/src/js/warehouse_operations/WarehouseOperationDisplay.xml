@@ -13,7 +13,7 @@
 
 
                         </div>
-                    <div style="background-color:#4EC1E0; text-align: center;padding: 0.15rem;">
+                    <div style="text-align: center;padding: 0.15rem;">
                             <p style="color:#06516e;margin: 0;font-size: 1.2rem;font-weight: 600;">Select the warehouse operation type</p>
                         </div>
                     <div style="height:100%;overflow: auto;">
@@ -78,7 +78,7 @@
                         </div>
 
                         </div>
-                    <div style="background-color:#4EC1E0; text-align: center;padding: 0.15rem;">
+                    <div style="text-align: center;padding: 0.15rem;">
                         <p style="color:#06516e;margin: 0;font-size: 1.2rem;font-weight: 600;">Select the transfer</p>
                     </div>
                     <div style="height: 100%;overflow: auto;">
