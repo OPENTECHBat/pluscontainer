@@ -40,7 +40,7 @@
                                     <div class="validate_popup_responsive" style="text-align:center;">
                                             <h2 style="font-weight: 600; text-align:center;">Add Location</h2>
                                             <div>
-                                                <SelectAddDropDownLocation data="locations.locations_list" selected_item="locations.location" select_action="(selected_location)=>selectAddLocation(selected_location)" details="{default_text:'Location'}" />
+                                                <SelectAddDropDownLocation data="locations.locations_list" selected_item="locations.location" select_action="(selected_location)=>selectAddLocation(selected_location)" details="{icon_path:'/custom_barcode_app/static/src/img/icons8-warehouse-42.png', default_text:'Location'}" />
                                             </div>
                                              <div style="display:flex; justify-content: space-evenly;margin-top: 20px;">
                                                 <button class="validate-popup-button-discard-responsive" t-on-click="backLocationPopup">Discard</button>
