@@ -201,6 +201,7 @@
     right: 0;
     max-height: calc(100vh - 134px - 160px);
     cursor: pointer;
+    background-color: white;
 }
 
 
