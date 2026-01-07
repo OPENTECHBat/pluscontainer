@@ -37,8 +37,8 @@
                     <t>
                         <div id="popup1" class="validate_popup_overlay" t-if="state.add_location_popup">
                                 <div style="height:100%;">
-                                    <div class="validate_popup_responsive" style="text-align:center; color:red">
-                                            <h2 style="font-weight: 600; text-align:center;">Add Location</h2>
+                                    <div class="validate_popup_responsive" style="text-align:center;">
+                                            <h2 style="font-weight: 600; text-align:center;">Add Location <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M480 544C515.3 544 544 515.3 544 480L544 160C544 124.7 515.3 96 480 96L160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544zM320 416C313.3 416 307 413.2 302.4 408.3L198.4 296.3C191.9 289.3 190.2 279.1 194 270.4C197.8 261.7 206.5 256 216 256L424 256C433.5 256 442.2 261.7 446 270.4C449.8 279.1 448.1 289.3 441.6 296.3L337.6 408.3C333.1 413.2 326.7 416 320 416z"/></svg></h2>
                                             <div>
                                                 <SelectAddDropDownLocation data="locations.locations_list" selected_item="locations.location" select_action="(selected_location)=>selectAddLocation(selected_location)" details="{icon_path:'/custom_barcode_app/static/src/img/icons8-warehouse-42.png', default_text:'Location'}" />
                                             </div>
