@@ -46,6 +46,10 @@
   cursor: pointer;
 }
 
+.product-select-dropdown {
+  font-size: 0.8rem;
+}
+
 /* Flecha tipo select */
 .dropdown-div::after {
   content: '';
