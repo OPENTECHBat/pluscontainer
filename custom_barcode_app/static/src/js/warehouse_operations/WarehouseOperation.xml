@@ -40,7 +40,7 @@
                     <div id="popup1" class="validate_popup_overlay" t-if="state.add_location_popup">
                         <div style="height:100%;">
                             <div class="validate_popup_responsive" style="text-align:center;">
-                                <h2 style="font-weight: 600; text-align:center;">Add Location</h2>
+                                <h2 style="font-weight: 600; text-align:center;">Ubicación</h2>
                                 <div>
                                     <SelectAddDropDownLocation data="locations.locations_list" selected_item="locations.location" select_action="(selected_location)=>this.selectAddLocation(selected_location)" details="{icon_path:'/custom_barcode_app/static/src/img/icons8-warehouse-42.png', default_text:'Location'}" />
                                 </div>
