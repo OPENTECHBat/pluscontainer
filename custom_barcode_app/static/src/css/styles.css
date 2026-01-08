@@ -92,7 +92,7 @@
 }
 
 .dropdown-location-list {
-  border: 1px solid #d8dadd;
+  border-bottom: 1px solid #d8dadd;
   border-radius: 0px !important;
 }
 
