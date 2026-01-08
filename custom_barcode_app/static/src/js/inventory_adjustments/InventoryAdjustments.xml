@@ -184,7 +184,7 @@
                                      <h2 style="font-weight: 500;font-size: 1rem; margin:0;">Source</h2>
                                  </div>
                                  <div>
-                                     <h2 t-if="props.selected_location.length == 0" style="margin: 0;font-size: 1.3rem;font-weight: 600;;">Location</h2>
+                                     <h2 t-if="props.selected_location.length == 0" style="margin: 0;font-size: 1.3rem;font-weight: 600;;">Ubicación</h2>
                                      <h2 t-if="props.selected_location.length>0" style="margin: 0;font-size: 1.3rem;font-weight: 600;"><span t-esc="props.selected_location[1]"/></h2>
                                  </div>
                              </div>
