@@ -243,7 +243,7 @@
                         </h2>
                     </div>
                     <div style="align-items:center;display: flex; margin-right:3px;">
-                        <i style="font-size: 1.5rem;" class="fa fa-sort"></i>
+                        <i style="font-size: 1.5rem;"></i>
                     </div>
 
             </div>

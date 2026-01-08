@@ -92,7 +92,7 @@
 
 .dropdown-location-list {
   border: 1px solid #d8dadd;
-  border-radius: 0px;
+  border-radius: 0px !important;
 }
 
 .botones-footer {
