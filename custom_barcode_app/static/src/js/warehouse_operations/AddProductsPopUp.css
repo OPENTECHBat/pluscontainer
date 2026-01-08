@@ -187,6 +187,11 @@
     color: #06516E;
 }
 
+.oi,
+.fa {
+    color: #262626;
+}
+
 /*.checkbox-input-2:checked + .checkbox-box-2 {*/
 /*background-color: #06516E;*/
 /*border-color: #06516E;*/
