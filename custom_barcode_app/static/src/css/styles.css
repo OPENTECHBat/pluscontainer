@@ -90,6 +90,10 @@
   touch-action: manipulation;
 }
 
+.dropdown-location-list {
+  border: 1px solid #d8dadd;
+}
+
 .botones-footer {
   background-color: white;
   padding: 5px;
