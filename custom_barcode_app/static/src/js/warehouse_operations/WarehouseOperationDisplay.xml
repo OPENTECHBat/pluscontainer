@@ -92,7 +92,7 @@
                                     </div>
                                     <div style="display:flex;">
                                         <div style="margin-right: 0.4rem;"><i class="fa fa-desktop" t-on-click.stop="()=> this.viewStockPicking(picking)"></i></div>
-                                        <div style="font-size: 1.0rem; color: white; padding:0.1rem 0.5rem;border-radius: 0.3rem;background-color: #06516e;">
+                                        <div style="font-size: 1.0rem; color: white; padding:0.1rem 0.5rem;border-radius: 0.3rem;">
                                              <t>
                                                  <t t-if="picking.state == 'assigned'">
                                                      <t>Ready</t>

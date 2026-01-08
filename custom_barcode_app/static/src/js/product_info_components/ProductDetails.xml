@@ -41,7 +41,7 @@
                         <div style="overflow:auto;display:flex;justify-content:center;background-color: white;position: absolute;top: 84px;bottom: 0px;left: 0;right: 0;">
                             <div class="product-info-container">
                                 <div>
-                                    <div style="background-color: #06516e;padding: 10px;border-radius: 5px;display:flex;justify-content:space-between">
+                                    <div style="padding: 10px;border-radius: 5px;display:flex;justify-content:space-between">
                                     <h1 style="font-weight: 600;color: white; font-family:'Montserrat';"><span t-esc="state.part.product_details[0].display_name"/></h1>
                                     <i style="font-size:3rem;color: white;" class="fa fa-2x fa-edit"
                                    t-on-click="() => this.editProductDataPopup"/>
