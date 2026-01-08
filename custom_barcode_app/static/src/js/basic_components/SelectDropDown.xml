@@ -29,7 +29,7 @@
                 <div style="text-align:left;">
                     <t t-if="props.selected_item.length>0">
                         <h2 style="font-weight: 600;"><span t-esc="props.selected_item[0].warehouse_id[1]"/></h2>
-                        <h2 style="font-size: 1.2rem;font-weight: 400;"><span t-esc="props.selected_item[0].name"/></h2>
+                        <h2><span t-esc="props.selected_item[0].name"/></h2>
                     </t>
                     <t t-else="">
                         <h2 style="font-weight: 600;"><span t-esc="props.details.default_text"/></h2>
