@@ -3,7 +3,7 @@
 <templates xml:space="preserve">
     <t t-name="custom_barcode_app.EditPopUpComponent" owl="1">
         <div style="height:100%;position:relative;">
-            <div style="display:flex;text-align:center;background-color:#06516E;align-items: center;height:84px;">
+            <div style="display:flex;text-align:center;align-items: center;height:84px;">
                     <div t-on-click="()=> props.back_button()"
                                  style="color : white; padding: 0.1rem 2rem; font-size: 50px;">
                         <i class="fa fa-angle-left"></i>

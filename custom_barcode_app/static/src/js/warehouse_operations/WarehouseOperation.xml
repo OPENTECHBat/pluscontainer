@@ -62,7 +62,7 @@
                     <AddProductsPopUp back_button="()=>this.backButtonAddProductPopup()" add_product="(selected_part, quantity)=>this.addProduct(selected_part, quantity)"/>
                 </t>
                 <t t-elif="state.go_back_screen">
-                        <div style="display:flex;text-align:center;background-color:#06516E;align-items: center; height:84px;">
+                        <div style="display:flex;text-align:center;align-items: center; height:84px;">
 
                         </div>
                             <div>

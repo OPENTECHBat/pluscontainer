@@ -27,7 +27,7 @@
             </t>
             <t>
                 <t t-if="state.part_available">
-                    <div style="display:flex;background-color:#06516E;align-items: center;height:84px;">
+                    <div style="display:flex; align-items: center;height:84px;">
                             <div t-on-click="backButtonClick"
                                  style="color : white; padding: 0.1rem 2rem; font-size: 50px;">
                                 <i class="fa fa-angle-left"></i>
@@ -96,7 +96,7 @@
 
                 </t>
                 <div style="height:100%;background-color:#F3F3F3" t-else="">
-                    <div style="display:flex;text-align:center;background-color:#06516E;align-items: center;height:84px;">
+                    <div style="display:flex;text-align:center;align-items: center;height:84px;">
                             <div t-on-click="backButtonClick"
                                  style="color : white; padding: 0.1rem 2rem; font-size: 50px;margin-right:auto;">
                                 <i class="fa fa-angle-left"></i>
