@@ -38,6 +38,10 @@
     font-size: 1rem;
 }
 
+.dropdown-div span {
+    font-size: 0.8rem;
+}
+
 .button-1 {
     font-family: 'Argentum Sans';
     background-color: #e8eaeb;
