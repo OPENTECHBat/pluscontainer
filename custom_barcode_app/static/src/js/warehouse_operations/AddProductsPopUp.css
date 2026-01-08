@@ -1,4 +1,3 @@
-
 .search-bar-input {
     height: 48px;
     padding: 0 11px;
@@ -42,7 +41,6 @@
 }
 
 .content-table thead tr {
-    background-color: #06516E;
     color: #ffffff;
     text-align: left;
     font-weight: 500;
@@ -185,7 +183,7 @@
 /*color: #f3f3f3;*/
 /*}*/
 
-.checkbox-input-1:checked + .checkbox-box-1::after {
+.checkbox-input-1:checked+.checkbox-box-1::after {
     content: '\2714';
     color: #06516E;
 }
@@ -196,7 +194,7 @@
 /*    color: #f3f3f3;*/
 /*}*/
 
-.checkbox-input-2:checked + .checkbox-box-2::after {
+.checkbox-input-2:checked+.checkbox-box-2::after {
     content: '\2714';
     color: #06516E;
 }
@@ -213,10 +211,10 @@
 }
 
 @media (max-width: 540px) {
-.search-bar-container-1 {
-    min-height: 100%;
-    width: 95%;
-    position: relative;
-    margin: 2rem auto 0 auto;
-}
+    .search-bar-container-1 {
+        min-height: 100%;
+        width: 95%;
+        position: relative;
+        margin: 2rem auto 0 auto;
+    }
 }

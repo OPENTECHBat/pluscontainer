@@ -19,9 +19,7 @@
     color: #4a4a4a;
 }
 
-.inventory-location-drop-down tbody tr:hover {
-    background-color: #06516E;
-}
+.inventory-location-drop-down tbody tr:hover {}
 
 .inventory-location-drop-down tbody tr:hover h1 {
     color: #FFFFFF;
@@ -29,11 +27,8 @@
 
 .line-button-quantity-set {
     font-family: 'Argentum Sans';
-    background-color: #ffffff;
     border-radius: 8px;
-    border: 3px solid #06516EFF;
     box-sizing: border-box;
-    color: #06516EFF;
     cursor: pointer;
     display: inline-block;
     font-size: 1.6rem;
@@ -59,9 +54,7 @@
     background-color: #ffffff;
 }
 
-.location-warehouse-icon {
-
-}
+.location-warehouse-icon {}
 
 .inventory-adjustment-title {
     color: #EEEEEE;
@@ -97,8 +90,9 @@
         display: flex;
     }
 }
+
 @media (max-width: 440px) {
-.equalize-button{
-    display: none !important;
-}
+    .equalize-button {
+        display: none !important;
+    }
 }
