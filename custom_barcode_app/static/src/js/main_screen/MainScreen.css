@@ -34,7 +34,8 @@
 
 .dropdown-div h2,
 .bar1 h2,
-.bar2 h2 {
+.bar2 h2,
+.dropdown-location-div h2 {
     font-size: 1rem;
 }
 
