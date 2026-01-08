@@ -227,7 +227,7 @@
         <div style="font-family: 'Argentum Sans';text-align:left; position:relative; max-width: 180px;width: 180px;" t-ref="root_sort_inventory">
             <div t-on-click="clickDropDown" class="dropdown-div" style="align-items:center; padding:5px;justify-content: space-between;">
                     <div>
-                        <h2 style="font-weight: 600;font-size: 1.5rem; margin:0px;">
+                        <h2>
                             <t t-if="props.sort_by == 'name'">
                                 <t>Name</t>
                             </t>
