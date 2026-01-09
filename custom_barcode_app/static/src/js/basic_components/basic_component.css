@@ -115,7 +115,6 @@
 }
 
 .validate-popup-button-responsive {
-
     font-family: 'Argentum Sans';
     border-radius: 5px;
     border-style: none;
@@ -124,15 +123,14 @@
     cursor: pointer;
     letter-spacing: 1px;
     display: inline-block;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 500;
-    height: 5rem;
     width: 30%;
     line-height: 20px;
     list-style: none;
     margin: 1px;
     outline: none;
-    padding: 10px 16px;
+    padding: 10px;
     position: relative;
     text-align: center;
     text-decoration: none;
