@@ -179,7 +179,8 @@
     cursor: pointer;
 }
 
-.dropdown-div h2 {
+.dropdown-div h2,
+.o_action_manager h2 {
     margin: 0;
     font-size: 0.8rem;
 }
