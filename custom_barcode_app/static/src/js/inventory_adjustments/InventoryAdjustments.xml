@@ -173,7 +173,7 @@
      <t t-name="custom_barcode_app.LocationDropDown" owl="1">
 
         <div style="font-family: 'Argentum Sans';min-height: 100%;max-width: 270px; width:270px; position:relative;margin-right:0.5rem;"  t-ref="root_location_drop_down">
-            <div t-on-click="clickDropDown" style="align-items:center;padding: 8px 10px;display: flex;background-color: #CEEBEE;border-radius: 0.4rem;cursor: pointer;">
+            <div t-on-click="clickDropDown" style="align-items:center;padding: 8px 10px;display: flex;border-radius: 0.4rem;cursor: pointer;">
                      <div t-attf-style="color:black;text-align:left; width:100%;">
                          <div style="display: flex;align-items: center;">
                              <div class="location-warehouse-icon">
