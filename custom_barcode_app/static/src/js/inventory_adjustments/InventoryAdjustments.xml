@@ -206,7 +206,7 @@
                         <tbody  t-foreach="warehouse_line.child_locations" t-as="child_location" t-key="child_location_index">
                             <tr style="font-family: 'Argentum Sans'; text-align: left;" t-on-click="()=> this.handleListClick(child_location)">
                                 <td>
-                                    <h1 style="font-size: 1.4rem;overflow: hidden;margin:0;font-weight: 500;font-family:'Montserrat';"><span t-esc="child_location[1]"/></h1>
+                                    <h1><span t-esc="child_location[1]"/></h1>
                                 </td>
                             </tr>
                         </tbody>
