@@ -31,7 +31,7 @@
                                              t-as="operation_types" t-key="operation_types_index"
                                              style="display:flex; cursor:pointer; padding:0.8rem;"
                                              t-on-click="()=>this.selectOperationType(operation_types)">
-                                            <div style="flex: 1 1 auto;"><p style="margin:0;letter-spacing:0.8px;font-size:1.1rem;font-weight:500;"> <span
+                                            <div style="flex: 1 1 auto;"><p> <span
                                                     t-esc="operation_types.name"/></p></div>
                                             <div class="ready-count-box" style="padding: 0.1rem 0.9rem;border-radius: 0.4rem;font-size:1.1rem;"> <span
                                                     t-esc="operation_types.count_picking_ready"/>
