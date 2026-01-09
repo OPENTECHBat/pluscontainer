@@ -65,7 +65,7 @@
                                     <h1><t t-esc="state.current_page"/>/<t t-esc="state.total_pages"/></h1>
                                 </div>
                                 <div t-on-click="nextPage1" style="margin: 7px;align-items:center;display: flex;  ">
-                                    <button style="background-color:#CEEBEE;padding: 0.4rem 1rem;border-radius: 0.4rem;font-size: 2rem;border: 0;"><i class="fa fa-angle-right"></i></button>
+                                    <button style="padding: 0.4rem 1rem;border-radius: 0.4rem;font-size: 2rem;border: 0;"><i class="fa fa-angle-right"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -177,7 +177,7 @@
                      <div t-attf-style="color:black;text-align:left; width:100%;">
                          <div style="display: flex;align-items: center;">
                              <div class="location-warehouse-icon">
-                                 <img src="/custom_barcode_app/static/src/img/warehouse-alt.svg" style="width: 3.5rem;margin-right:0.41rem;"/>
+                                 <img src="/custom_barcode_app/static/src/img/warehouse-alt.svg" style="width: 20px;margin-right:0.41rem;"/>
                              </div>
                              <div>
                                  <div>
