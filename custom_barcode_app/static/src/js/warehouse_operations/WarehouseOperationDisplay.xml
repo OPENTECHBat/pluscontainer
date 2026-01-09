@@ -14,7 +14,7 @@
 
                         </div>
                     <div style="text-align: center;padding: 0.15rem;">
-                            <p style="color:#06516e;margin: 0;font-size: 1.2rem;font-weight: 600;">Select the warehouse operation type</p>
+                            <p>Select the warehouse operation type</p>
                         </div>
                     <div style="height:100%;overflow: auto;">
                         <div style="display:flex; flex-flow: row wrap;align-content: flex-start;height: 100%;">
@@ -24,7 +24,7 @@
                                 <div style="display:flex; padding:0.8rem">
 
 
-                                    <h2 style="color:white;font-weight: 600;letter-spacing:0.8px;"> <span t-esc="warehouse.warehouse[1]"/></h2>
+                                    <h2> <span t-esc="warehouse.warehouse[1]"/></h2>
                                 </div>
                                 <div style="">
                                         <div class="list-operation" t-foreach="warehouse.warehouse_operation_types"
@@ -79,7 +79,7 @@
 
                         </div>
                     <div style="text-align: center;padding: 0.15rem;">
-                        <p style="color:#06516e;margin: 0;font-size: 1.2rem;font-weight: 600;">Select the transfer</p>
+                        <p>Select the transfer</p>
                     </div>
                     <div style="height: 100%;overflow: auto;">
                         <div style="display:flex; flex-flow: row wrap;height: 100%;align-content: flex-start;">
