@@ -124,7 +124,6 @@
     display: inline-block;
     font-size: 1rem;
     font-weight: 500;
-    width: 30%;
     line-height: 20px;
     list-style: none;
     margin: 1px;
@@ -138,14 +137,15 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    color: #333;
 }
 
 .validate-popup-button-discard-responsive {
     background-color: #e7e9ed;
+    color: #333;
     border-radius: 5px;
     border-style: none;
     font-family: 'Argentum Sans';
-    background-color: #F0F0F0;
     cursor: pointer;
     display: inline-block;
     letter-spacing: 1px;
