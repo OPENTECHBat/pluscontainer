@@ -140,6 +140,10 @@
     color: #333;
 }
 
+.sort-by-list-item {
+    padding-top: 10px;
+}
+
 .validate-popup-button-discard-responsive {
     background-color: #e7e9ed;
     color: #333;
