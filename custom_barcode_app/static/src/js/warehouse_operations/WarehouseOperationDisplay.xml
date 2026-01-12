@@ -202,7 +202,7 @@
                     <li t-on-click="()=>this.handleListClick('cancel')">
                         <div style="align-items:center; display:flex;">
                             <div>
-                                <h2 style="font-size: 1.2rem;font-weight: 600;">Cancelled</h2>
+                                <h2>Cancelled</h2>
                             </div>
                         </div>
                     </li>
