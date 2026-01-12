@@ -198,7 +198,7 @@
                         <thead>
                             <tr style="text-align: center;">
                                 <th>
-                                    <h1 style="margin-top:5px;"><span t-esc="warehouse_line.warehouse[1]"/></h1>
+                                    <h1 style="margin-top:10px; margin-bottom:10px"><span t-esc="warehouse_line.warehouse[1]"/></h1>
                                 </th>
                             </tr>
 
