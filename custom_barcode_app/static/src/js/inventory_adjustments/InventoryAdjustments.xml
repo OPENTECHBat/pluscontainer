@@ -251,21 +251,21 @@
             <div t-if="state.list_visible" class="dropdown-list" style="overflow-y: auto;z-index: 1; border:1px solid;">
                 <div>
                     <div t-on-click="() => this.handleListClick('name')" class="sort-by-list-item">
-                            <h2 style="font-size: 1.2rem;font-weight: 600;">Name</h2>
+                            <h2>Name</h2>
                     </div>
                     <div t-on-click="() => this.handleListClick('internal_reference')" class="sort-by-list-item">
 
-                            <h2 style="font-size: 1.2rem;font-weight: 600;">Part No</h2>
+                            <h2>Part No</h2>
 
                     </div>
                     <div t-on-click="() => this.handleListClick('quantity')" class="sort-by-list-item">
 
-                            <h2 style="font-size: 1.2rem;font-weight: 600;">Quantity</h2>
+                            <h2>Quantity</h2>
 
                     </div>
                     <div t-on-click="() => this.handleListClick('weight')" class="sort-by-list-item">
 
-                            <h2 style="font-size: 1.2rem;font-weight: 600;">Weight</h2>
+                            <h2>Weight</h2>
 
                     </div>
                 </div>
