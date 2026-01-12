@@ -74,6 +74,7 @@
 }
 
 .confirm-button {
+  color: #333;
   background-color: #e7e9ed;
   border-radius: 5px;
   border-style: none;
