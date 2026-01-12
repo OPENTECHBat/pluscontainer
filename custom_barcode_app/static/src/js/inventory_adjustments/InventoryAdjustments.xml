@@ -248,7 +248,7 @@
 
             </div>
 
-            <div t-if="state.list_visible" class="dropdown-list" style="overflow-y: auto;z-index: 1; border:1px solid;">
+            <div t-if="state.list_visible" class="dropdown-list" style="overflow-y: auto;z-index: 1;">
                 <div>
                     <div t-on-click="() => this.handleListClick('name')" class="sort-by-list-item">
                             <h2>Name</h2>
