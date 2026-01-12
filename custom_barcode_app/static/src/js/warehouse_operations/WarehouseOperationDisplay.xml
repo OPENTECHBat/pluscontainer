@@ -150,7 +150,7 @@
 
         <div style="font-family: 'Argentum Sans';text-align:left; position:relative; max-width: 150px;width: 150px;"  t-ref="root_select_state">
             <div t-on-click="clickDropDown" class="dropdown-div" style="align-items:center; padding:10px;">
-                <h2 style="font-weight: 600;font-size: 1.5rem;">
+                <h2>
                     <t t-if="props.selected_state == 'assigned'">
                         <t>Ready</t>
                     </t>
