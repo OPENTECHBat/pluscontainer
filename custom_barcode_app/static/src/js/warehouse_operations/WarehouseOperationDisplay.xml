@@ -174,28 +174,28 @@
                     <li t-on-click="()=>this.handleListClick('assigned')">
                         <div style="align-items:center; display:flex;">
                             <div>
-                                <h2 style="font-size: 1.2rem;font-weight: 600;">Ready</h2>
+                                <h2>Ready</h2>
                             </div>
                         </div>
                     </li>
                     <li t-on-click="()=>this.handleListClick('confirmed')">
                         <div style="align-items:center; display:flex;">
                             <div>
-                                <h2 style="font-size: 1.2rem;font-weight: 600;">Waiting</h2>
+                                <h2>Waiting</h2>
                             </div>
                         </div>
                     </li>
                     <li t-on-click="()=>this.handleListClick('draft')">
                         <div style="align-items:center; display:flex;">
                             <div>
-                                <h2 style="font-size: 1.2rem;font-weight: 600;">Draft</h2>
+                                <h2>Draft</h2>
                             </div>
                         </div>
                     </li>
                     <li t-on-click="()=>this.handleListClick('done')">
                         <div style="align-items:center; display:flex;">
                             <div>
-                                <h2 style="font-size: 1.2rem;font-weight: 600;">Done</h2>
+                                <h2>Done</h2>
                             </div>
                         </div>
                     </li>
