@@ -132,7 +132,7 @@
                                     <div t-elif="props.inventory_line.data.inventory_quantity_set" style="padding: 2px 5px;border-radius: 5px 0px 0px 5px;color: black;border: 0.2rem solid;border-right: 0;">
                                         <span style="" t-esc="props.inventory_line.data.inventory_quantity"/>
                                     </div>
-                                    <div style="padding: 2px 5px;border-radius: 0px 5px 5px 0px;color: white;">
+                                    <div style="padding: 2px 5px;border-radius: 0px 5px 5px 0px;color: white;border: 0.2rem solid #06516e;border-left: 0;">
                                         <span style="" t-esc="props.inventory_line.data.quantity"/>
                                     </div>
                                 </div>
@@ -148,7 +148,7 @@
                         <button type="button" class="line-button" t-on-click.stop="()=> props.edit_popup(props.inventory_line)"><i style="" class="fa fa-2x fa-pencil" /></button>
                         <button type="button" class="line-button-quantity-set"  t-on-click.stop="()=> props.edit_inventory_quantity_set(props.inventory_line)">
                             <t t-if="props.inventory_line.data.inventory_quantity_set">
-                                <i class="fa fa-2x fa-check" width="20px" style=""></i>
+                                <i class="fa fa-2x fa-check" style=""></i>
                             </t>
                         </button>
 <!--                        <BarcodeLineButtonInventoryEdit edit_popup="()=> props.edit_popup(props.inventory_line)" />-->
