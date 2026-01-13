@@ -228,7 +228,7 @@
      </t>
 
     <t t-name="custom_barcode_app.BarcodeLineTransfer" owl="1">
-        <div class="warehouse-operation-barcode-line" t-attf-id="barcode_line_{{props.inventory_line.id}}" t-on-click="()=>props.change_is_select(props.inventory_line)" t-attf-style="border:{{props.inventory_line.is_selected ? '2px solid ' : '2px solid transparent'}};margin: 0.5rem; background-color:#e6f2f3" >
+        <div class="warehouse-operation-barcode-line" t-attf-id="barcode_line_{{props.inventory_line.id}}" t-on-click="()=>props.change_is_select(props.inventory_line)" t-attf-style="border:{{props.inventory_line.is_selected ? '2px solid ' : '2px solid transparent'}};margin: 0.5rem; background-color: {{ props.inventory_line.is_selected ? '#e6f2f3' : 'transparent' }};" >
             <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
                 <div style="display: flex; flex-wrap: nowrap;">
                     <div style=" margin-right:10px; width:115px;height:80px;">
