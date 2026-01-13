@@ -148,7 +148,7 @@
                         <button type="button" class="line-button" t-on-click.stop="()=> props.edit_popup(props.inventory_line)"><i style="" class="fa fa-2x fa-pencil" /></button>
                         <button type="button" class="line-button-quantity-set"  t-on-click.stop="()=> props.edit_inventory_quantity_set(props.inventory_line)">
                             <t t-if="props.inventory_line.data.inventory_quantity_set">
-                                <i class="fa fa-2x fa-check" style=""></i>
+                                <i class="fa fa-2x fa-check"></i>
                             </t>
                         </button>
 <!--                        <BarcodeLineButtonInventoryEdit edit_popup="()=> props.edit_popup(props.inventory_line)" />-->

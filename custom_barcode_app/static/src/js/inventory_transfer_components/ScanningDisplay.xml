@@ -237,7 +237,7 @@
                     </div>
                     <div>
                         <p style="color: black;">
-                            <span t-esc="props.inventory_line.data.display_name"/>
+                            <span t-esc="props.inventory_line.data.display_name"/> Unidades
                         </p>
                         <p style="color: black;">
                             <span t-esc="props.inventory_line.data.quantity" style="padding: 2px 5px;border-radius: 3px;"/>
