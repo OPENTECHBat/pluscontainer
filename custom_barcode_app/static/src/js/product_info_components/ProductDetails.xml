@@ -51,23 +51,23 @@
                                         <div style="flex: 1 1 auto;">
                                             <table class="data-table-responsive" style="width:100%;">
                                                 <tr>
-                                                    <td style="font-weight: 500;">Tipo de Producto</td>
+                                                    <td style="font-weight: 500;">Product Type</td>
                                                     <td><span t-esc="state.part.product_details[0].type"/></td>
                                                 </tr>
                                                 <tr>
-                                                    <td style="font-weight: 500;">Número/td>
+                                                    <td style="font-weight: 500;">Part No</td>
                                                     <td><span t-esc="state.part.product_details[0].default_code"/></td>
                                                 </tr>
                                                 <tr>
-                                                    <td style="font-weight: 500;">Categoría</td>
+                                                    <td style="font-weight: 500;">Category</td>
                                                     <td><span t-esc="state.part.product_details[0].categ_id"/></td>
                                                 </tr>
                                                 <tr>
-                                                    <td style="font-weight: 500;">Código de barras</td>
+                                                    <td style="font-weight: 500;">Barcode</td>
                                                     <td><span t-esc="state.part.product_details[0].barcode"/></td>
                                                 </tr>
                                                 <tr>
-                                                    <td style="font-weight: 500;">Descripción de Venta</td>
+                                                    <td style="font-weight: 500;">Sales Description</td>
                                                     <td><span t-esc="state.part.product_details[0].description_sale"/></td>
                                                 </tr>
 
