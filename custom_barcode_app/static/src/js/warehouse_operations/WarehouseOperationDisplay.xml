@@ -14,7 +14,7 @@
 
                         </div>
                     <div style="text-align: center;padding: 0.15rem;">
-                            <p>Select the warehouse operation type</p>
+                            <p>Seleccione el tipo de operación de depósito</p>
                         </div>
                     <div style="height:100%;overflow: auto;">
                         <div style="display:flex; flex-flow: row wrap;align-content: flex-start;height: 100%;">
