@@ -105,24 +105,24 @@
                         <div style="width:100%;margin: 2rem 0rem;">
                             <table class="data-table-responsive" style="width:100%;">
                                 <tr>
-                                    <td style="font-weight: 500;">Product Type</td>
+                                    <td style="font-weight: 500;">Tipo de producto</td>
                                     <td><span t-esc="state.part_details.product_details[0].type"/></td>
                                 </tr>
                                 <tr>
-                                    <td style="font-weight: 500;">Part No</td>
+                                    <td style="font-weight: 500;">Código de Producto</td>
                                     <td><span t-esc="state.part_details.product_details[0].default_code"/></td>
 
                                 </tr>
                                 <tr>
-                                    <td style="font-weight: 500;">Category</td>
+                                    <td style="font-weight: 500;">Categoría</td>
                                     <td><span t-esc="state.part_details.product_details[0].categ_id"/></td>
                                 </tr>
                                 <tr>
-                                    <td style="font-weight: 500;">Barcode</td>
+                                    <td style="font-weight: 500;">Codigo de Barras</td>
                                     <td><span t-esc="state.part_details.product_details[0].barcode"/></td>
                                 </tr>
                                 <tr>
-                                    <td style="font-weight: 500;">Sales Description</td>
+                                    <td style="font-weight: 500;">Descripción de Venta</td>
                                     <td><span t-esc="state.part_details.product_details[0].description_sale"/></td>
                                 </tr>
 
@@ -136,9 +136,9 @@
                     </div>
                 </div>
                 <div style=" position:fixed;bottom: 0px;width: 100%;">
-                        <button type="button" class="confirm-button" t-on-click="() => props.back_button()">Back</button>
+                        <button type="button" class="confirm-button" t-on-click="() => props.back_button()">Atrás</button>
                 <button type="button" class="confirm-button"
-                        t-on-click="()=> this.confirmAddProduct()">Confirm</button>
+                        t-on-click="()=> this.confirmAddProduct()">Confirmar</button>
             </div>
             </t>
             <t t-else="">
@@ -244,7 +244,7 @@
                             </t>
                         <t t-if="state.parts.length==0">
                                 <div style="text-align:center;">
-                                    <p>No results</p>
+                                    <p>No hay Resultados</p>
                                 </div>
                             </t>
                     </div>
@@ -258,12 +258,12 @@
                 <div style="display:flex;flex-flow: row wrap;">
                     <div style="flex: 1 1 auto; width:550px;background-color: #f3f3f3;border-radius: 5px;margin:0.5rem; font-size:14px;color: rgb(74, 74, 74);box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px 0px;letter-spacing: 1px;">
                         <div style="padding: 12px 20px;color: rgb(74, 74, 74);">
-                            <p style="font-size: 20px;margin:0">Pricing &amp; Cost</p>
+                            <p style="font-size: 20px;margin:0">Precios y Costo</p>
                         </div>
                         <div style="border: 1px solid rgb(221, 221, 221); margin:0px 20px "></div>
                         <div style="display:flex; width:100%;background-color:#F3F3F3;padding: 8px 16px;">
                              <div style="width:60%;">
-                                 <p style="padding-left: 10px;margin:0;">Cost</p>
+                                 <p style="padding-left: 10px;margin:0;">Costo</p>
                              </div>
                              <div style="width:40%;text-align:right;">
                                  <p style="margin:0;"><span t-if="props.warehouse_details.currency_data.position =='before'" t-esc="props.warehouse_details.currency_data.symbol"/><span t-esc="props.warehouse_details.product_details[0].standard_price"/><span t-if="props.warehouse_details.currency_data.position =='after'" t-esc="props.warehouse_details.currency_data.symbol"/></p>
@@ -271,7 +271,7 @@
                          </div>
                         <div style="display:flex; width:100%;background-color:#F3F3F3;padding: 8px 16px;">
                              <div style="width:60%;">
-                                 <p style="padding-left: 10px;margin:0;">Sale Price</p>
+                                 <p style="padding-left: 10px;margin:0;">Precio de Venta</p>
                              </div>
                              <div style="width:40%;text-align:right;">
                                  <p style="margin:0;"><span></span><span t-if="props.warehouse_details.currency_data.position =='before'" t-esc="props.warehouse_details.currency_data.symbol"/><span t-esc="props.warehouse_details.product_details[0].list_price"/><span t-if="props.warehouse_details.currency_data.position =='after'" t-esc="props.warehouse_details.currency_data.symbol"/></p>
@@ -280,10 +280,10 @@
                         <div style="border: 1px solid rgb(221, 221, 221); margin:0px 20px "></div>
                         <div style="display:flex; width:100%;background-color:#F3F3F3;padding: 8px 16px 0px 16px;margin-top: 10px;color: rgb(123, 123, 123);font-size: 12px;">
                                 <div style="width:60%;">
-                                     <p style="padding-left: 10px;margin:0;">PRICING SCHEME</p>
+                                     <p style="padding-left: 10px;margin:0;">ESQUEMA DE PRECIOS</p>
                                 </div>
                                 <div style="width:40%; text-align:right;">
-                                     <p style="padding-left: 10px;margin:0;">SALES PRICE</p>
+                                     <p style="padding-left: 10px;margin:0;">PRECIO DE VENTA</p>
                                 </div>
                         </div>
                         <t t-foreach="props.warehouse_details.price_lists" t-as="price_list" t-key="price_list_index">
@@ -304,11 +304,11 @@
                     <div style="flex: 1 1 auto;background-color: #f3f3f3; width:550px;margin:0.5rem;letter-spacing:1px;border-radius: 5px;box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px 0px;">
                         <div style="display:flex; padding: 10px 20px 0px 20px;">
                             <div style="margin-right: 20px;">
-                                <p>Quantity On Hand</p>
+                                <p>Cantidad Disponible</p>
                                 <p style="font-size: 3rem;"><span t-esc="props.warehouse_details.product_details[0].qty_available"/></p>
                             </div>
                             <div>
-                                <p>Forecast Quantity</p>
+                                <p>Cantidad Prevista</p>
                                 <p style="font-size: 3rem;"><span t-esc="props.warehouse_details.product_details[0].virtual_available"/></p>
 
                             </div>
@@ -317,12 +317,12 @@
                                     <div style="display:flex;align-items:center; margin:0.5rem;">
                                         <input class="checkbox-input-1" type="checkbox" id="HideNoStock" name="HideNoStock" value="HideNoStock" t-on-change="selectHideNoStock"  t-att-checked="state.is_hide_no_stock" />
                                         <div class="checkbox-box-1"></div>
-                                        <label for="HideNoStock" style="position: static;padding: 0 0 0 5px;pointer-events: all !important;cursor: pointer;font-size: 14px;line-height: 13px; margin:0px;">Hide No Stock Locations</label>
+                                        <label for="HideNoStock" style="position: static;padding: 0 0 0 5px;pointer-events: all !important;cursor: pointer;font-size: 14px;line-height: 13px; margin:0px;">Ocultar Ubicaciones sin Existencias”</label>
                                     </div>
                                     <div style="display:flex;align-items:center; margin:0 0.5rem;">
                                         <input class="checkbox-input-2" type="checkbox" id="ExpandAll" name="ExpandAll" value="ExpandAll" t-on-change="selectExpandAll" t-att-checked="state.is_expanded"/>
                                         <div class="checkbox-box-2"></div>
-                                        <label for="ExpandAll" style="position: static;padding: 0 0 0 5px;pointer-events: all !important;cursor: pointer;font-size: 14px;line-height: 13px; margin:0px;">Expand All</label>
+                                        <label for="ExpandAll" style="position: static;padding: 0 0 0 5px;pointer-events: all !important;cursor: pointer;font-size: 14px;line-height: 13px; margin:0px;">Mostrar Todos</label>
                                     </div>
                                 </div>
                             </div>
@@ -362,19 +362,19 @@
                         <div style="border: 1px solid rgb(221, 221, 221); margin:0px 20px "></div>
                         <div style="display:flex; width:100%;background-color:#F3F3F3;padding: 8px 16px 0px 16px;margin-top: 10px;color: rgb(123, 123, 123);font-size: 12px;">
                                 <div style="width:40%;">
-                                     <p style="padding-left: 10px;margin:0;">VENDOR</p>
+                                     <p style="padding-left: 10px;margin:0;">PROVEEDOR</p>
                                 </div>
                                 <div style="width:15%; text-align:right;">
-                                     <p style="padding-left: 10px;margin:0;">LEAD TIME</p>
+                                     <p style="padding-left: 10px;margin:0;">TIEMPO DE ENTREGA</p>
                                 </div>
                                 <div style="width:15%; text-align:right;">
-                                     <p style="padding-left: 10px;margin:0;">Qty</p>
+                                     <p style="padding-left: 10px;margin:0;">CANTIDAD</p>
                                 </div>
                                 <div style="width:15%; text-align:right;">
-                                     <p style="padding-left: 10px;margin:0;">UOM</p>
+                                     <p style="padding-left: 10px;margin:0;">UNINDAD DE MEDIDA</p>
                                 </div>
                                 <div style="width:15%; text-align:right;">
-                                     <p style="padding-left: 10px;margin:0;">PRICE</p>
+                                     <p style="padding-left: 10px;margin:0;">PRECIO</p>
                                 </div>
                         </div>
                         <t t-foreach="props.warehouse_details.suppliers" t-as="supplier" t-key="supplier_index">
