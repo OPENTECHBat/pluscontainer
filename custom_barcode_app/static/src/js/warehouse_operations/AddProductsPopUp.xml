@@ -405,7 +405,7 @@
                         <div style="border: 1px solid rgb(221, 221, 221); margin:0px 20px "></div>
                         <div style="display:flex; width:100%;background-color:#F3F3F3;padding: 8px 16px;">
                              <div style="width:60%;">
-                                 <p style="padding-left: 10px;margin:0;">General UOM</p>
+                                 <p style="padding-left: 10px;margin:0;">Unidad de Medida General</p>
                              </div>
                              <div style="width:40%;text-align:right;">
                                  <p style="margin:0;"><span t-esc="props.warehouse_details.product_details[0].uom_id"/></p>
@@ -413,19 +413,19 @@
                          </div>
                         <div style="display:flex; width:100%;background-color:#F3F3F3;padding: 8px 16px;">
                              <div style="width:60%;">
-                                 <p style="padding-left: 10px;margin:0;">Purchase UOM</p>
+                                 <p style="padding-left: 10px;margin:0;">Unidad de Medida de Compra</p>
                              </div>
                              <div style="width:40%;text-align:right;">
                                  <p style="margin:0;"><span t-esc="props.warehouse_details.product_details[0].uom_po_id"/></p>
                              </div>
                          </div>
                         <div style="padding: 12px 20px;color: rgb(74, 74, 74);">
-                            <p style="font-size: 20px;margin:0">Logistic</p>
+                            <p style="font-size: 20px;margin:0">Logistica</p>
                         </div>
                         <div style="border: 1px solid rgb(221, 221, 221); margin:0px 20px "></div>
                         <div style="display:flex; width:100%;background-color:#F3F3F3;padding: 8px 16px;">
                              <div style="width:60%;">
-                                 <p style="padding-left: 10px;margin:0;">Weight</p>
+                                 <p style="padding-left: 10px;margin:0;">Peso</p>
                              </div>
                              <div style="width:40%;text-align:right;">
                                  <p style="margin:0;"><span t-esc="props.warehouse_details.product_details[0].weight"/><span t-esc="props.warehouse_details.product_details[0].weight_uom_name"/></p>
@@ -433,7 +433,7 @@
                          </div>
                         <div style="display:flex; width:100%;background-color:#F3F3F3;padding: 8px 16px;">
                              <div style="width:60%;">
-                                 <p style="padding-left: 10px;margin:0;">Volume</p>
+                                 <p style="padding-left: 10px;margin:0;">Volumen</p>
                              </div>
                              <div style="width:40%;text-align:right;">
                                  <p style="margin:0;"><span t-esc="props.warehouse_details.product_details[0].volume"/><span t-esc="props.warehouse_details.product_details[0].volume_uom_name"/></p>
@@ -441,10 +441,10 @@
                          </div>
                         <div style="display:flex; width:100%;background-color:#F3F3F3;padding: 8px 16px;">
                              <div style="width:60%;">
-                                 <p style="padding-left: 10px;margin:0;">Customer Lead Time</p>
+                                 <p style="padding-left: 10px;margin:0;">Tiempo de Entrega al Cliente</p>
                              </div>
                              <div style="width:40%;text-align:right;">
-                                 <p style="margin:0;"><span t-esc="props.warehouse_details.product_details[0].sale_delay"/> days</p>
+                                 <p style="margin:0;"><span t-esc="props.warehouse_details.product_details[0].sale_delay"/> días</p>
                              </div>
                          </div>
                         <div style="padding:10px;"></div>
