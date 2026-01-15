@@ -16,6 +16,14 @@
   font-weight: bold;
 }
 
+.fa-2x {
+  font-size: 1rem;
+}
+
+.line-button-quantity-set {
+  color: black
+}
+
 .line-button,
 .line-button-quantity-set {
   font-family: 'Argentum Sans';
