@@ -129,9 +129,10 @@
                                         <span>?</span>
                                     </div>
                                     <div t-elif="props.inventory_line.data.inventory_quantity_set">
-                                        <span style="" t-esc="props.inventory_line.data.inventory_quantity"/> de 
+                                        <span style="" t-esc="props.inventory_line.data.inventory_quantity"/><span style="margin-right:8px;"></span>de 
                                     </div>
-                                    <div><span style="" t-esc="props.inventory_line.data.quantity"/>Productos
+                                    <div><span style="" t-esc="props.inventory_line.data.quantity"/><span style="margin-right:8px;"></span>
+Productos
                                     </div>
                                 </div>
                             </t>
