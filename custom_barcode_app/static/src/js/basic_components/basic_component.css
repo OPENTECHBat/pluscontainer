@@ -189,6 +189,7 @@
 .inventory-location-drop-down h1,
 h2 {
     margin: 0;
+    color: black !important;
     font-size: 0.8rem;
 }
 
