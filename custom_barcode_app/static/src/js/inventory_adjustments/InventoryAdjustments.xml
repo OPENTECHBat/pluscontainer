@@ -122,8 +122,7 @@
                         <p class="warehouse-operation-display-name" >
                             <span t-esc="props.inventory_line.data.display_name"/>
                         </p>
-                        <div style="font-size: 1.4rem; color: black; display:flex;">
-
+                        <div style="color: black; display:flex;">
                             <t>
                                 <div style=" display:flex;">
                                     <div t-if="!props.inventory_line.data.inventory_quantity_set">
@@ -133,7 +132,7 @@
                                         <span style="" t-esc="props.inventory_line.data.inventory_quantity"/>
                                     </div>
                                     <div>
-                                        de <span style="" t-esc="props.inventory_line.data.quantity"/> Productos
+                                         de <span style="" t-esc="props.inventory_line.data.quantity"/> Productos
                                     </div>
                                 </div>
                             </t>
