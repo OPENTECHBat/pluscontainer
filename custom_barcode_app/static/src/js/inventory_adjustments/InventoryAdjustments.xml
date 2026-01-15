@@ -132,8 +132,8 @@
                                     <div t-elif="props.inventory_line.data.inventory_quantity_set">
                                         <span style="" t-esc="props.inventory_line.data.inventory_quantity"/>
                                     </div>
-                                    <div style="padding: 2px 5px;border-radius: 0px 5px 5px 0px;color: white;border: 0.2rem solid #06516e;border-left: 0;">
-                                        <span style="" t-esc="props.inventory_line.data.quantity"/>
+                                    <div>
+                                        de <span style="" t-esc="props.inventory_line.data.quantity"/> Productos
                                     </div>
                                 </div>
                             </t>
