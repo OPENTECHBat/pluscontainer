@@ -111,12 +111,12 @@
 
 
         <t t-name="custom_barcode_app.BarcodeLine" owl="1">
-        <div class="warehouse-operation-barcode-line" t-attf-id="barcode_line_{{props.inventory_line.id}}" t-on-click="()=> props.change_is_select(props.inventory_line)" t-attf-style="background-color:{{props.inventory_line.genuine_inventory_line ? '#ffffffff' : '#e6f2f3' }}; border:{{props.inventory_line.is_selected ? '2px solid ' : '2px solid transparent'}};margin: 0.5rem;font-family: 'Argentum Sans'; font-weight:500;" >
+        <div class="warehouse-operation-barcode-line" t-attf-id="barcode_line_{{props.inventory_line.id}}" t-on-click="()=> props.change_is_select(props.inventory_line)" t-attf-style="background-color:{{props.inventory_line.genuine_inventory_line ? '#ffffffff' : '#e6f2f3' }}; border:{{props.inventory_line.is_selected ? '2px solid ' : '2px solid transparent'}};margin: 0.5rem;font-family: 'Argentum Sans';" >
             <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
                 <div style="display: flex; flex-wrap: nowrap;">
                     <div style=" margin-right:10px; width:120px;height:80px;">
                         <img t-attf-src="{{props.image_url(props.inventory_line.data.product_id,props.inventory_line.data.write_date)}}"
-                                         style="object-fit:contain;  max-height:80px; max-width:120px;"/>
+                                         style="object-fit:contain; max-height:80px; max-width:120px;"/>
                     </div>
                     <div style="">
                         <p class="warehouse-operation-display-name" >
@@ -129,10 +129,9 @@
                                         <span>?</span>
                                     </div>
                                     <div t-elif="props.inventory_line.data.inventory_quantity_set">
-                                        <span style="" t-esc="props.inventory_line.data.inventory_quantity"/>
+                                        <span style="" t-esc="props.inventory_line.data.inventory_quantity"/> de 
                                     </div>
-                                    <div>
-                                         de <span style="" t-esc="props.inventory_line.data.quantity"/> Productos
+                                    <div><span style="" t-esc="props.inventory_line.data.quantity"/> Productos
                                     </div>
                                 </div>
                             </t>

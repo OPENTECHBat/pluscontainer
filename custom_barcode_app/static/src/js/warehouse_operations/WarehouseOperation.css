@@ -4,7 +4,6 @@
 }
 
 .warehouse-operation-display-name {
-    font-size: 1.4rem;
     color: black;
     margin-bottom: 0.3rem;
 }
@@ -26,7 +25,6 @@
     margin: 0;
     letter-spacing: 2px;
     font-weight: 600;
-    font-size: 1.9rem;
 }
 
 .warehouse-operation-back-button-left {
