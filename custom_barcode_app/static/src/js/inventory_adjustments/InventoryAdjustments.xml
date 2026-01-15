@@ -126,10 +126,10 @@
 
                             <t>
                                 <div style=" display:flex;">
-                                    <div t-if="!props.inventory_line.data.inventory_quantity_set" style="padding: 2px 5px;border-radius: 5px 0px 0px 5px;color: black;border: 0.2rem solid;border-right: 0;">
+                                    <div t-if="!props.inventory_line.data.inventory_quantity_set">
                                         <span>?</span>
                                     </div>
-                                    <div t-elif="props.inventory_line.data.inventory_quantity_set" style="padding: 2px 5px;border-radius: 5px 0px 0px 5px;color: black;border: 0.2rem solid;border-right: 0;">
+                                    <div t-elif="props.inventory_line.data.inventory_quantity_set">
                                         <span style="" t-esc="props.inventory_line.data.inventory_quantity"/>
                                     </div>
                                     <div style="padding: 2px 5px;border-radius: 0px 5px 5px 0px;color: white;border: 0.2rem solid #06516e;border-left: 0;">
